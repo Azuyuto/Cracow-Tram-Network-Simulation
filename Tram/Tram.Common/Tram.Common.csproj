@@ -68,6 +68,10 @@
     <Compile Include="Models\Node.cs" />
     <Compile Include="Models\TramIntersection.cs" />
     <Compile Include="Models\Vehicle.cs" />
+    <Compile Include="Models\ZTP\LineZTP.cs" />
+    <Compile Include="Models\ZTP\StopTimesZTP.cs" />
+    <Compile Include="Models\ZTP\StopZTP.cs" />
+    <Compile Include="Models\ZTP\TripZTP.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

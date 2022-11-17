@@ -1,0 +1,143 @@
+﻿using Microsoft.DirectX;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Tram.Common.Models.ZTP;
+using TramNetwork.Common.Models.ZTP;
+
+namespace Tram.Controller.Repositories
+{
+    public static class ZTPRepository
+    {
+        public static List<StopTimesZTP> StopTimes { get; set; }
+        public static List<LineZTP> Lines { get; set; }
+        public static List<TripZTP> Trips { get; set; }
+        public static List<StopZTP> Stops { get; set; }
+
+        public static void Initialize()
+        {
+            ReadStopTimesInfo();
+            ReadLinesInfo();
+            ReadTripsInfo();
+            ReadStopsInfo();
+        }
+
+        public static void ReadStopTimesInfo()
+        {
+            try
+            {
+                using (StreamReader sr = new StreamReader("ZTP/stop_times.txt"))
+                {
+                    sr.ReadLine(); // ignore header
+                    string line;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        List<string> stopData = new List<String>();
+                        stopData = line.Split(',').ToList();
+                        var stop = new StopTimesZTP();
+                        stop.TripID = stopData[0];
+                        stop.Arrival = stopData[1];
+                        stop.Departure = stopData[2];
+                        stop.StopID = stopData[3];
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("The file could not be read:");
+                Console.WriteLine(e.Message);
+            }
+        }
+
+        public static void ReadLinesInfo()
+        {
+            try
+            {
+                Lines = new List<LineZTP>();
+                using (StreamReader sr = new StreamReader("ZTP/routes.txt"))
+                {
+                    sr.ReadLine(); // ignore header
+                    string line;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        List<string> content = new List<String>();
+                        var nextLine = new LineZTP();
+                        content = line.Split(',').ToList();
+                        nextLine.RouteID = content[0];
+                        nextLine.LineName = content[2].Trim('"');
+                        Lines.Add(nextLine);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("The file could not be read:");
+                Console.WriteLine(e.Message);
+            }
+        }
+
+        public static void ReadTripsInfo()
+        {
+            try
+            {
+                Trips = new List<TripZTP>();
+                using (StreamReader sr = new StreamReader("ZTP/trips.txt"))
+                {
+                    sr.ReadLine(); // ignore header
+                    string line;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        List<string> content = new List<String>();
+                        var nextTrip = new TripZTP();
+                        content = line.Split(',').ToList();
+                        nextTrip.TripID = content[0];
+                        nextTrip.RouteID = content[1];
+                        nextTrip.ServiceID = content[2];
+                        nextTrip.Destination = content[3];
+                        Trips.Add(nextTrip);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("The file could not be read: ");
+                Console.WriteLine(e.Message);
+            }
+        }
+
+        public static void ReadStopsInfo()
+        {
+            try
+            {
+                Stops = new List<StopZTP>();
+                using (StreamReader sr = new StreamReader("ZTP/stops.txt"))
+                {
+                    sr.ReadLine(); // ignore header
+                    string line;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        Vector2 coord = new Vector2();
+                        List<string> stop_line = new List<String>();
+                        var nextStop = new StopZTP();
+                        stop_line = line.Split(',').ToList();
+                        nextStop.StopID = stop_line[0];
+                        nextStop.StopName = stop_line[2].Trim('"');
+                        coord.X = float.Parse(stop_line[4], CultureInfo.InvariantCulture);
+                        coord.Y = float.Parse(stop_line[5], CultureInfo.InvariantCulture);
+                        nextStop.StopCoordinates = coord;
+                        Stops.Add(nextStop);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("The file could not be read: ");
+                Console.WriteLine(e.Message);
+            }
+        }
+    }
+}
