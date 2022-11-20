@@ -61,7 +61,7 @@ namespace Tram.Controller.Controllers
         {
             // Get time interval since last update (in seconds)
             float elapsedTime = (float)Math.Min((DateTime.Now - lastUpdateTime).TotalSeconds, CalculationConsts.MAX_TIME_INTERVAL);
-            float deltaTime = elapsedTime * 200;
+            float deltaTime = elapsedTime * 10;
             lastUpdateTime = DateTime.Now;
 
             // Change time 

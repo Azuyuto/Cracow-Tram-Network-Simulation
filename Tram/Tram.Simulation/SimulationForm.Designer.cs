@@ -95,6 +95,7 @@
             this.renderPanel.Name = "renderPanel";
             this.renderPanel.Size = new System.Drawing.Size(953, 566);
             this.renderPanel.TabIndex = 1;
+            this.renderPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.renderPanel_MouseMove);
             // 
             // SimulationForm
             // 

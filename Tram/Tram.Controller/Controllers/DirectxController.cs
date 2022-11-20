@@ -62,7 +62,7 @@ namespace Tram.Controller.Controllers
                             pY,
                             node.Type == NodeType.CarCross ? ViewConsts.GREEN_LIGHT_COLOR.ToArgb() :
                                 node.Type == NodeType.TramStop ? ViewConsts.STOP_COLOR.ToArgb() : ViewConsts.POINT_NORMAL_COLOR.ToArgb(),
-                            ViewConsts.POINT_RADIUS,
+                            ViewConsts.POINT_RADIUS_LINE,
                             ViewConsts.POINT_PRECISION));
                 }
 
@@ -70,7 +70,7 @@ namespace Tram.Controller.Controllers
                 {
                     float pX2 = CalculateXPosition(node.Child.Node.Coordinates.X);
                     float pY2 = CalculateYPosition(node.Child.Node.Coordinates.Y);
-                    edges.Add(DirectxHelper.CreateLine(pX, pY, pX2, pY2, GetLineColor(node, node.Child.Node).ToArgb(), ViewConsts.POINT_RADIUS));
+                    edges.Add(DirectxHelper.CreateLine(pX, pY, pX2, pY2, GetLineColor(node, node.Child.Node).ToArgb(), ViewConsts.POINT_RADIUS_LINE));
                 }
                 else if (node.Children != null)
                 {
@@ -78,7 +78,7 @@ namespace Tram.Controller.Controllers
                     {
                         float pX2 = CalculateXPosition(child.Node.Coordinates.X);
                         float pY2 = CalculateYPosition(child.Node.Coordinates.Y);
-                        edges.Add(DirectxHelper.CreateLine(pX, pY, pX2, pY2, GetLineColor(node, child.Node).ToArgb(), ViewConsts.POINT_RADIUS));
+                        edges.Add(DirectxHelper.CreateLine(pX, pY, pX2, pY2, GetLineColor(node, child.Node).ToArgb(), ViewConsts.POINT_RADIUS_LINE));
                     }
                 }
             }

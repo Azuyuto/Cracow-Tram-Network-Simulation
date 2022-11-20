@@ -13,7 +13,8 @@ namespace Tram.Common.Consts
         public const int START_CAMERA_Z = 125;
 
 
-        public const float POINT_RADIUS = 0.0045f;
+        public const float POINT_RADIUS = 0.045f;
+        public const float POINT_RADIUS_LINE = 0.45f;
 
         public const int POINT_PRECISION = 24;
 

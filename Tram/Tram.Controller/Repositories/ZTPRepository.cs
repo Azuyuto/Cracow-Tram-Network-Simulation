@@ -13,6 +13,7 @@ namespace Tram.Controller.Repositories
 {
     public static class ZTPRepository
     {
+        public static List<NodePair> MapLines { get; set; }
         public static List<StopTimesZTP> StopTimes { get; set; }
         public static List<LineZTP> Lines { get; set; }
         public static List<TripZTP> Trips { get; set; }
@@ -24,12 +25,37 @@ namespace Tram.Controller.Repositories
             ReadLinesInfo();
             ReadTripsInfo();
             ReadStopsInfo();
+            GenerateMapLines();
+        }
+
+        public static void GenerateMapLines()
+        {
+            MapLines = new List<NodePair>();
+
+        }
+
+        public static List<RouteZTP> GetRoutes()
+        {
+            return Trips.GroupBy(a => a.RouteID).Select(a => a.Skip(3).FirstOrDefault().TripID).Select(a => GetRouteByName(a)).ToList();
+        }
+
+        public static RouteZTP GetRouteByName(string tripID)
+        {
+            var model = new RouteZTP()
+            {
+                Trip = Trips.Where(a => a.TripID == tripID).FirstOrDefault(),
+                Stops = StopTimes.Where(a => a.TripID == tripID).ToList()
+            };
+            model.Line = Lines.Where(a => a.RouteID == model.Trip.RouteID).FirstOrDefault();
+
+            return model;
         }
 
         public static void ReadStopTimesInfo()
         {
             try
             {
+                StopTimes = new List<StopTimesZTP>();
                 using (StreamReader sr = new StreamReader("ZTP/stop_times.txt"))
                 {
                     sr.ReadLine(); // ignore header
@@ -43,6 +69,7 @@ namespace Tram.Controller.Repositories
                         stop.Arrival = stopData[1];
                         stop.Departure = stopData[2];
                         stop.StopID = stopData[3];
+                        StopTimes.Add(stop);
                     }
                 }
             }
@@ -126,8 +153,8 @@ namespace Tram.Controller.Repositories
                         stop_line = line.Split(',').ToList();
                         nextStop.StopID = stop_line[0];
                         nextStop.StopName = stop_line[2].Trim('"');
-                        coord.X = float.Parse(stop_line[4], CultureInfo.InvariantCulture);
-                        coord.Y = float.Parse(stop_line[5], CultureInfo.InvariantCulture);
+                        coord.X = float.Parse(stop_line[5], CultureInfo.InvariantCulture);
+                        coord.Y = float.Parse(stop_line[4], CultureInfo.InvariantCulture);
                         nextStop.StopCoordinates = coord;
                         Stops.Add(nextStop);
                     }
