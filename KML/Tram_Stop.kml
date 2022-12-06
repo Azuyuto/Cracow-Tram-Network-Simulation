@@ -1,0 +1,2999 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="test2" id="test2">
+	<SimpleField name="osm_id" type="string"></SimpleField>
+	<SimpleField name="barrier" type="string"></SimpleField>
+	<SimpleField name="highway" type="string"></SimpleField>
+	<SimpleField name="ref" type="string"></SimpleField>
+	<SimpleField name="address" type="string"></SimpleField>
+	<SimpleField name="is_in" type="string"></SimpleField>
+	<SimpleField name="place" type="string"></SimpleField>
+	<SimpleField name="man_made" type="string"></SimpleField>
+	<SimpleField name="other_tags" type="string"></SimpleField>
+</Schema>
+<Folder><name>test2</name>
+  <Placemark>
+	<name>Darwina</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213578413</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0123.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0591386,50.0907938</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>JarzÄ™biny</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213578422</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0124.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0607844,50.0919015</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>WzgĂłrza KrzesĹ‚awickie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213578451</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0125.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0652148,50.0949232</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Kombinat</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213578731</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0107.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0650412,50.0791355</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Cienista</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213585855</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0120.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0385224,50.0853912</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Teatr Ludowy</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213585864</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0119.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0329435,50.082406</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo Kocmyrzowskie im. Ks. Gorzelanego</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213585881</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0118.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0264899,50.0790506</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>BieĹ„czycka</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213585893</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0203242,50.075604</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Stella-Sawickiego</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213585922</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0046383,50.0743017</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AWF</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213585931</SimpleData>
+		<SimpleData name="other_tags">&quot;disused&quot;=&gt;&quot;tram_stop&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0100.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9989789,50.0740094</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Teatr VariĂ©tĂ©</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213592007</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9623745,50.0588268</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ofiar DÄ…bia</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213593804</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9762713,50.0596288</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Francesco Nullo</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213593828</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9673821,50.0601733</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo 308. Dywizjonu</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213597071</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0053735,50.0673967</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Plaza (nĹĽ)</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213597117</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9839354,50.0630424</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Os. Kolorowe</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213602155</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0285576,50.0723553</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Struga</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213605085</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0106.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0462495,50.0745301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>DH Wanda</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213643707</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0135.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0206008,50.0845139</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo Kocmyrzowskie im. Ks. Gorzelanego</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213644494</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0118.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0265424,50.0802621</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo Hipokratesa</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213645106</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0162.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0214207,50.0900802</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo Piastowskie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213645256</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0143.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0112533,50.0943805</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Piasta KoĹ‚odzieja</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213646585</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.013012,50.0978326</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Os. PiastĂłw</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213646624</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0120407,50.1019904</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Os. ZĹ‚otego Wieku</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213648409</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0141.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0043218,50.0937518</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>MiĹ›nieĹ„ska</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213648418</SimpleData>
+		<SimpleData name="other_tags">&quot;network&quot;=&gt;&quot;KMK&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0140.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9999467,50.0945024</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Mistrzejowice</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">213648443</SimpleData>
+		<SimpleData name="other_tags">&quot;network&quot;=&gt;&quot;MPK KrakĂłw&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0139.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9963344,50.0950303</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>BratysĹ‚awska 72</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">257656078</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9346284,50.0829459</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dworzec GĹ‚Ăłwny Tunel</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">276679066</SimpleData>
+		<SimpleData name="other_tags">&quot;layer&quot;=&gt;&quot;-2&quot;,&quot;name:en&quot;=&gt;&quot;Main Station Tunnel&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9477349,50.0682455</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Nowy BieĹĽanĂłw P+R</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">287442350</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.022581,50.0154125</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Nowy BieĹĽanĂłw P+R</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">287586332</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0702.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0232538,50.0157031</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Prokocim</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">287586583</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0648.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9908199,50.0178301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>PodgĂłrze SKA</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">288916414</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0642.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9614158,50.0418356</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>KurdwanĂłw P+R 08</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">289685340</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0584.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9504325,50.0136002</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Witosa 01</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">289685344</SimpleData>
+		<SimpleData name="other_tags">&quot;network&quot;=&gt;&quot;Komunikacja Miejska w Krakowie&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0583.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9568375,50.0123437</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Borek FaĹ‚Ä™cki</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">321429856</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0562.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9265974,50.013235</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Borek FaĹ‚Ä™cki</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">321429867</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0562.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9270187,50.0130891</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Koksochemia NĹ»</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">321436933</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0217.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.104671,50.0719294</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Brama nr 5 NĹ»</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">321436944</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0215.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0916356,50.0690446</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Suche Stawy</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">321437076</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0210.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0590009,50.0675008</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Plac Centralny im. R. Reagana</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">321437262</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0105.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.038829,50.0725634</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Plac Centralny im. R. Reagana</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">321437391</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;website&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0105.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0354966,50.0717103</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Cmentarz Rakowicki</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">321458378</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0854.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9574804,50.0742389</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Teatr Bagatela</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">470643346</SimpleData>
+		<SimpleData name="other_tags">&quot;name:de&quot;=&gt;&quot;Bagatela-Theater&quot;,&quot;name:pl&quot;=&gt;&quot;Teatr Bagatela&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0827.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9333775,50.0638069</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Limanowskiego</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">602156572</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0641.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9548544,50.0451313</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Limanowskiego</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">602156574</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0641.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9559492,50.0449752</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Wiadukty</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">604059116</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0122.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0567935,50.0883471</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Wlotowa</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">622594608</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0647.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9879318,50.0194846</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Prokocim</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">622594610</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0648.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9911047,50.0175261</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>BieĹĽanowska</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">622594618</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0646.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9817019,50.023099</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Kabel</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">622594619</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;website&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0645.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9771807,50.0266706</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Cmentarz PodgĂłrski</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">622594630</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0643.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9649053,50.0386872</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Prokocim Szpital</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">623520640</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0649.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9988146,50.0144573</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Teligi</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">623520694</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0655.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0068419,50.0166448</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Nowy Prokocim</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">623520704</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0656.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0120318,50.0161183</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ä†wikliĹ„skiej</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">623562103</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0657.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0191073,50.0160852</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>NowosÄ…decka</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">624406882</SimpleData>
+		<SimpleData name="other_tags">&quot;network&quot;=&gt;&quot;Komunikacja Miejska w Krakowie&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0627.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9646822,50.0134761</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Borek FaĹ‚Ä™cki I</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">629106144</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0743.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9277901,50.014605</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Solvay</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">629106146</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0561.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9298976,50.0168118</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ĺagiewniki</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">629106151</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0553.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9354419,50.0296814</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ĺagiewniki</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">629106153</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0553.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9355476,50.0298428</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>RzemieĹ›lnicza</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">629106157</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0559.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9386995,50.0336366</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo Grunwaldzkie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">630945148</SimpleData>
+		<SimpleData name="other_tags">&quot;bench&quot;=&gt;&quot;yes&quot;,&quot;bus&quot;=&gt;&quot;yes&quot;,&quot;name:pl&quot;=&gt;&quot;Rondo Grunwaldzkie&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;shelter&quot;=&gt;&quot;yes&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0501.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9310383,50.0485659</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Orzeszkowej</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">630945156</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0872.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9379944,50.0505021</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Reymana</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">632417956</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0346.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.910508,50.0614161</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Fabryczna</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">638606056</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9712619,50.0602495</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>DÄ…bie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">638606061</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9791276,50.0607308</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">638606074</SimpleData>
+		<SimpleData name="other_tags">&quot;noname&quot;=&gt;&quot;yes&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9797189,50.0616291</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Centralna</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">638606093</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0127646,50.0694252</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>BiaĹ‚ucha</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">639603957</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0804.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;limited&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9779202,50.067816</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>TAURON Arena KrakĂłw Wieczysta</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">639603980</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0805.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9828213,50.0710634</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo Mogilskie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">651848336</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;shelter&quot;=&gt;&quot;yes&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;website&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0802.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;limited&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9586869,50.0660336</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Szpital Narutowicza 02</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">652730395</SimpleData>
+		<SimpleData name="ref">02</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9378802,50.0806532</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>BratysĹ‚awska</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">652730396</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9335828,50.0846959</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Plac Centralny im. R. Reagana</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">655410587</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0105.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0363368,50.0729622</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Bardosa</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">773635753</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0211.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0649239,50.0677728</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Os.Na Skarpie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">773635778</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;train&quot;=&gt;&quot;no&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0188.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0462366,50.0697018</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Kopiec Wandy</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">773635797</SimpleData>
+		<SimpleData name="other_tags">&quot;disused:railway&quot;=&gt;&quot;tram_stop&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0212.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0691853,50.0682312</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Klasztorna</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">773635866</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0189.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0529645,50.0684904</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>WaĹ„kowicza</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">777395555</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0121.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0474844,50.0869688</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dunikowskiego</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">840467680</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0161.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0159279,50.0922647</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Kleeberga</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">840467685</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0144.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0126917,50.0957637</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Szwedzka</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">957085219</SimpleData>
+		<SimpleData name="other_tags">&quot;bus&quot;=&gt;&quot;yes&quot;,&quot;operator&quot;=&gt;&quot;ZTP KrakĂłw&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9253466,50.0467329</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Teatr SĹ‚owackiego 02</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1027047776</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0801.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9444219,50.0647915</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo Piastowskie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1301798253</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0143.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.011277,50.0943491</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Nowy Prokocim</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1310458610</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0656.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0132092,50.0163114</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Prokocim</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1310458614</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0648.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9909193,50.0176811</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Prokocim Szpital</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1310458632</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0649.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0001625,50.0145666</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Teligi</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1310458642</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0655.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0079316,50.0165006</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Oleandry</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1316407565</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0345.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9211973,50.0597894</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Oleandry</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1316407567</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0345.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9203492,50.0598957</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Muzeum Narodowe</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1316407578</SimpleData>
+		<SimpleData name="other_tags">&quot;name:pl&quot;=&gt;&quot;Cracovia&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0825.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9242497,50.059356</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Kopiec Wandy NĹ»</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1318766524</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0212.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0666708,50.0699882</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Korona</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1345322499</SimpleData>
+		<SimpleData name="other_tags">&quot;disused:public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;disused:tram&quot;=&gt;&quot;yes&quot;,&quot;operator&quot;=&gt;&quot;Line 8&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0556.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9466528,50.04412</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>ElektromontaĹĽ N/Ĺ»</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1369031767</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0194.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0641103,50.0877238</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>ZabĹ‚ocie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1418989418</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;website&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0619.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.964249,50.0499345</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Klimeckiego</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1418989432</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;website&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0294.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9676126,50.0490065</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Gromadzka</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1418995540</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;website&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0671.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9780937,50.0406577</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>KukliĹ„skiego</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1418995542</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;website&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0670.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9736009,50.0445723</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>KukliĹ„skiego</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1418995562</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0670.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9735435,50.0445695</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Cmentarz Rakowicki</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1445499305</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/0002/0002t013.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9560511,50.0729422</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Poczta GĹ‚Ăłwna</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1518864572</SimpleData>
+		<SimpleData name="other_tags">&quot;name:de&quot;=&gt;&quot;Hauptpost&quot;,&quot;name:pl&quot;=&gt;&quot;Poczta GĹ‚Ăłwna&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0806.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9424201,50.0598125</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Mrozowa</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1539953455</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0717182,50.0841098</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Lipska</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1611745640</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0671.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9843731,50.0406485</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Lipska</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1611745642</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;website&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0671.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9816557,50.0406845</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rzebika</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1611745646</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9909354,50.0405501</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rzebika</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1611745699</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9926422,50.0404364</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Os. ZĹ‚otego Wieku</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1696191638</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0141.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0043971,50.093696</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Kopiec Wandy</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1763772088</SimpleData>
+		<SimpleData name="other_tags">&quot;disused:railway&quot;=&gt;&quot;tram_stop&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0692229,50.0681729</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Fabryczna</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1764579350</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9701478,50.0604483</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Giedroycia NĹ»</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1764757654</SimpleData>
+		<SimpleData name="other_tags">&quot;old_name&quot;=&gt;&quot;JeĹĽynowa&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0214.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0842806,50.0646239</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Giedroycia NĹ»</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1764757662</SimpleData>
+		<SimpleData name="other_tags">&quot;old_name&quot;=&gt;&quot;JeĹĽynowa&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0214.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.085065,50.0647621</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Fort MogiĹ‚a NĹ»</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1764757687</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0889.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0713156,50.0664021</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Meksyk NĹ»</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1764757751</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0216.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0946953,50.0698185</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Meksyk NĹ»</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1764757754</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0216.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0954505,50.0698961</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>PleszĂłw</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1764757832</SimpleData>
+		<SimpleData name="other_tags">&quot;operator&quot;=&gt;&quot;MPK KrakĂłw&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0218.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.1168862,50.0728926</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>CystersĂłw</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1768224650</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0803.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9705791,50.0665203</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>CystersĂłw</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1768224656</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0803.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9690368,50.066533</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>BiaĹ‚ucha</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1768224703</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0804.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;limited&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9772962,50.0676305</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>TAURON Arena KrakĂłw Wieczysta</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1768224723</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0805.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9838195,50.0717726</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Cienista</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1769087786</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0120.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0376791,50.0849127</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Os. Zgody</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1769087828</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0314521,50.0765045</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Teatr Ludowy</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1769087965</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0119.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0320304,50.0818674</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>WaĹ„kowicza</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1769088034</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0121.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.047492,50.0869378</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>ElektromontaĹĽ N/Ĺ»</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1770194211</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0194.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0642212,50.0876885</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Kombinat</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1770194212</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0107.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0658531,50.0798254</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo Hipokratesa</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1770978364</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0162.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0213715,50.0900852</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>DH Wanda</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1770978365</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0135.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0206236,50.0844645</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Darwina</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1770978366</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0123.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0590919,50.0908137</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dunikowskiego</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1770978367</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0161.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0154578,50.092551</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>JarzÄ™biny</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1770978369</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0124.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0602506,50.0916212</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo 308. Dywizjonu</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1811875207</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0053794,50.0673624</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>BroĹĽka</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1882247981</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0552.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.931716,50.0305226</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo Mogilskie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1887802513</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0802.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9592821,50.0649129</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo Mogilskie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1887802514</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0802.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9593504,50.0649719</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo Mogilskie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1887812661</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0802.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9598677,50.0657653</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dworzec GĹ‚Ăłwny Tunel</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1888516300</SimpleData>
+		<SimpleData name="other_tags">&quot;layer&quot;=&gt;&quot;-2&quot;,&quot;name:en&quot;=&gt;&quot;Main Station Tunnel&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9477353,50.068204</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>MaĹ‚y PĹ‚aszĂłw P+R</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1889519517</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0671.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0015026,50.0400632</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Wlotowa</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1890503287</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0647.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9879379,50.0194336</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>BieĹĽanowska</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1890503289</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0646.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9816801,50.02306</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Kabel</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1890503305</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0645.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9764746,50.0272989</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dworcowa</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1890503312</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0644.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9702393,50.0334709</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Cmentarz PodgĂłrski</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1890503349</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0643.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9644381,50.0390832</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Szpital Narutowicza 01</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1951264398</SimpleData>
+		<SimpleData name="ref">01</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9379098,50.0806887</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ä†wikliĹ„skiej</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1951264400</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0657.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0200192,50.0159514</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Os. Zgody</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1961123173</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0308193,50.076939</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo Mogilskie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">1995730500</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0802.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9596415,50.0657692</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Chmieleniec 02</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2017952988</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.898039,50.0207618</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Chmieleniec 01</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2017952992</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.8975129,50.0203808</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Czerwone Maki P+R</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2017955948</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.8894451,50.0183937</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Czerwone Maki P+R 01</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2017955951</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.8890939,50.0179916</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Park Jordana</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2028510896</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0453.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9181207,50.060265</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Park Jordana</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2028510897</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0453.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9175742,50.0603244</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Kapelanka</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2052183688</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0523.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9220191,50.045074</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>KobierzyĹ„ska</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2052183689</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0525.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9259293,50.034407</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>KobierzyĹ„ska</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2052183690</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0525.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9259736,50.0346305</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>SĹ‚omiana</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2052183691</SimpleData>
+		<SimpleData name="other_tags">&quot;operator&quot;=&gt;&quot;ZTP KrakĂłw&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9245391,50.0408242</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>SĹ‚omiana</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2052183693</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0524.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9240926,50.0414239</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Korona</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2065560164</SimpleData>
+		<SimpleData name="other_tags">&quot;operator&quot;=&gt;&quot;Line 8&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0556.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9465449,50.0435158</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Korona</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2067123479</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0556.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9475031,50.0440512</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>BieĹĽanowska</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2134334911</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0646.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.979396,50.0236435</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dauna</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2134334912</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0635.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.977519,50.0184067</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dauna</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2134334913</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;website&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0635.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.977579,50.0184095</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Piaski Nowe</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2134334914</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;website&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0634.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9715955,50.0154486</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Piaski Nowe</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2134334915</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0634.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9715857,50.015483</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AWF</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2163355802</SimpleData>
+		<SimpleData name="other_tags">&quot;disused&quot;=&gt;&quot;tram_stop&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0100.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9989809,50.0739753</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>CzyĹĽyny</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2163355803</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0102.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0112874,50.0740361</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>CzyĹĽyny</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2163355804</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0102.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0113199,50.0739983</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Kombinat</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2163355806</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0107.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0659983,50.0786827</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Os. Kolorowe</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2163355807</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0298155,50.0721988</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Stella-Sawickiego</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2163355809</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0046461,50.0742657</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Struga</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2163355810</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0106.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0474952,50.0748991</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Zajezdnia Nowa Huta</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2163355813</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0655446,50.0834582</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Zajezdnia Nowa Huta</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2163355814</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0655949,50.0835633</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Bardosa</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2194801607</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0211.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0649285,50.0677378</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Brama nr 4 NĹ»</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2194801612</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0213.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.075365,50.0648558</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Brama nr 4 NĹ»</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2194801616</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0213.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0747729,50.0649531</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Fort MogiĹ‚a NĹ»</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2194801619</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0889.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0707822,50.0667005</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Koksochemia NĹ»</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2194801621</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0217.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.1044867,50.0719064</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Gromadzka</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2255627362</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0671.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9781288,50.0406188</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Os.Na Skarpie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2386355259</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0188.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0453049,50.0698355</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo Kocmyrzowskie im. Ks. Gorzelanego</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2386355260</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0118.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.028057,50.0790591</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo Kocmyrzowskie im. Ks. Gorzelanego</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2386355261</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0118.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0284153,50.0800692</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Wiadukty</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2387955394</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0122.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0567365,50.0883571</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Stradom</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2418596862</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0819.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9412017,50.0520683</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Szwedzka</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2418596863</SimpleData>
+		<SimpleData name="other_tags">&quot;bus&quot;=&gt;&quot;yes&quot;,&quot;operator&quot;=&gt;&quot;ZTP KrakĂłw&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9255938,50.0467789</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Stradom</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2418610054</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0819.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.942057,50.0522511</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Norymberska 02</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2418723932</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0527.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9131498,50.0301448</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Wawel</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2418766215</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0818.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.939381,50.0543131</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>StarowiĹ›lna</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419039772</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0807.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9449718,50.0569467</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Plac BohaterĂłw Getta</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419064240</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0640.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9550071,50.0466859</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Plac BohaterĂłw Getta</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419064241</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0640.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9550582,50.0466922</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Miodowa</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419106061</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0815.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9488976,50.0532057</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Miodowa</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419106062</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0815.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9480787,50.053934</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ĺšw. WawrzyĹ„ca</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419106073</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0816.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.951063,50.0511328</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Filharmonia</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419367401</SimpleData>
+		<SimpleData name="other_tags">&quot;name:de&quot;=&gt;&quot;Philharmonie&quot;,&quot;name:pl&quot;=&gt;&quot;Filharmonia&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0822.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9330989,50.0591774</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Jubilat 2t</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419720285</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0823.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9270698,50.0550028</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Jubilat</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419720286</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0823.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9282103,50.0555551</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Komorowskiego</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419720287</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0300.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9218144,50.0534121</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Salwator</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419732952</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://www.ttss.krakow.pl/#?stop=311&amp;mode=departure&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9136821,50.0528046</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Salwator</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419732954</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://www.ttss.krakow.pl/#?stop=311&amp;mode=departure&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.914996,50.052734</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Filharmonia</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419768560</SimpleData>
+		<SimpleData name="other_tags">&quot;name:de&quot;=&gt;&quot;Philharmonie&quot;,&quot;name:pl&quot;=&gt;&quot;Filharmonia&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0822.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9329612,50.0586597</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Filharmonia</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419768561</SimpleData>
+		<SimpleData name="other_tags">&quot;name:de&quot;=&gt;&quot;Philharmonie&quot;,&quot;name:pl&quot;=&gt;&quot;Filharmonia&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0822.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9338703,50.0590323</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Plac Wolnica</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419768562</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0820.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9434277,50.0480432</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Plac Wolnica</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419768563</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0820.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9434749,50.0480539</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Plac Wszystkich ĹšwiÄ™tych</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419768564</SimpleData>
+		<SimpleData name="other_tags">&quot;name:de&quot;=&gt;&quot;Alle-Heiligen-Platz&quot;,&quot;name:pl&quot;=&gt;&quot;Plac Wszystkich ĹšwiÄ™tych&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;wheelchair&quot;=&gt;&quot;limited&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9376313,50.0591156</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Plac Wszystkich ĹšwiÄ™tych</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419768565</SimpleData>
+		<SimpleData name="other_tags">&quot;name:de&quot;=&gt;&quot;Alle-Heiligen-Platz&quot;,&quot;name:pl&quot;=&gt;&quot;Plac Wszystkich ĹšwiÄ™tych&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.938241,50.0591291</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Poczta GĹ‚Ăłwna</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419768566</SimpleData>
+		<SimpleData name="other_tags">&quot;name:de&quot;=&gt;&quot;Hauptpost&quot;,&quot;name:pl&quot;=&gt;&quot;Poczta GĹ‚Ăłwna&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0806.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9418181,50.0593419</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Stradom</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419768567</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0819.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9424031,50.0508567</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Stradom</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419768568</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0819.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.941335,50.0514795</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ĺšw.Gertrudy</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419768586</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0817.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9408874,50.0584541</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>PodgĂłrze SKA</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419775591</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0642.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9607129,50.0424354</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo Matecznego</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419790519</SimpleData>
+		<SimpleData name="other_tags">&quot;network&quot;=&gt;&quot;Komunikacja Miejska w Krakowie&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0558.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9402834,50.0358614</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo Matecznego</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419790520</SimpleData>
+		<SimpleData name="other_tags">&quot;network&quot;=&gt;&quot;Komunikacja Miejska w Krakowie&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0558.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9407839,50.0369442</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Smolki</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419790521</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0557.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9430846,50.0414281</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Smolki</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419790522</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0557.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9432459,50.041641</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ĺagiewniki</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419790544</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0553.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9369696,50.0304829</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Muzeum Narodowe</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419821165</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0825.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9256504,50.0595317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Uniwersytet JagielloĹ„ski</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419821166</SimpleData>
+		<SimpleData name="other_tags">&quot;name:de&quot;=&gt;&quot;Jagiellonen-UniversitĂ¤t&quot;,&quot;name:pl&quot;=&gt;&quot;Uniwersytet JagielloĹ„ski&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9306055,50.0602558</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Uniwersytet JagielloĹ„ski</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419821167</SimpleData>
+		<SimpleData name="other_tags">&quot;name:de&quot;=&gt;&quot;Jagiellonen-UniversitĂ¤t&quot;,&quot;name:pl&quot;=&gt;&quot;Uniwersytet JagielloĹ„ski&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9315363,50.0603624</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Cichy KÄ…cik</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419831874</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0347.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9033718,50.0629361</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Reymana</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419831875</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0346.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.91121,50.0613357</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Teatr Bagatela 01</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419894822</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0827.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9325961,50.063058</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Batorego</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419959763</SimpleData>
+		<SimpleData name="other_tags">&quot;operator&quot;=&gt;&quot;KMK KrakĂłw&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9293711,50.0666264</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Bronowice</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419959764</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0357.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9024616,50.0771424</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Bronowice</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419959765</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0357.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9007259,50.0777847</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Plac InwalidĂłw</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419959766</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0829.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9268115,50.0688451</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Plac InwalidĂłw</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419959767</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9258957,50.0695929</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Teatr Bagatela</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419959769</SimpleData>
+		<SimpleData name="other_tags">&quot;name:de&quot;=&gt;&quot;Bagatela-Theater&quot;,&quot;name:pl&quot;=&gt;&quot;Teatr Bagatela&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0827.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9326155,50.0637373</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Wesele 01</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419959774</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.8978548,50.0788496</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Bronowice</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419959849</SimpleData>
+		<SimpleData name="other_tags">&quot;railway&quot;=&gt;&quot;tram_stop&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9014059,50.0771585</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Wesele 02</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419959874</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;shelter&quot;=&gt;&quot;yes&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.8967465,50.0792294</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Bronowice SKA 01</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419986537</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0359.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.889683,50.0813371</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Biprostal</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419986538</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9160555,50.0728622</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Biprostal</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419986539</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9150451,50.0730964</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Bronowice MaĹ‚e 01</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419986540</SimpleData>
+		<SimpleData name="other_tags">&quot;operator&quot;=&gt;&quot;Line 8&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.8819253,50.0818084</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Bronowice MaĹ‚e</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419986541</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.8830987,50.0820435</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>GĹ‚owackiego</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419986542</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/?akcja=przystanek&amp;przystanek=R8WCb3dhY2tpZWdv&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9058459,50.0758889</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Uniwersytet Pedagogiczny</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419986543</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.91077,50.074127</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Uniwersytet Pedagogiczny</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419986544</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9099941,50.0742583</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>UrzÄ™dnicza</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419986545</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.komunikacja.krakow.pl/index.php?id=przesiadki&amp;przyst=Urz%EAdnicza&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9200252,50.0717719</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>UrzÄ™dnicza</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2419986546</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.komunikacja.krakow.pl/index.php?id=przesiadki&amp;przyst=Urz%EAdnicza&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9192502,50.0719637</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Stary Kleparz</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2420069703</SimpleData>
+		<SimpleData name="other_tags">&quot;name:de&quot;=&gt;&quot;Alt KlĂ¶pper&quot;,&quot;name:pl&quot;=&gt;&quot;Stary Kleparz&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0833.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9386241,50.0662339</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Stary Kleparz</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2420153432</SimpleData>
+		<SimpleData name="other_tags">&quot;name:de&quot;=&gt;&quot;Alt KlĂ¶pper&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0833.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9396881,50.0662984</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Stary Kleparz</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2420153433</SimpleData>
+		<SimpleData name="other_tags">&quot;name:de&quot;=&gt;&quot;Alt KlĂ¶pper&quot;,&quot;name:pl&quot;=&gt;&quot;Stary Kleparz&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0833.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;limited&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9389538,50.0666541</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dworzec GĹ‚Ăłwny ZachĂłd 01</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2420153434</SimpleData>
+		<SimpleData name="other_tags">&quot;name:en&quot;=&gt;&quot;Main Station West&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9453496,50.0678231</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Politechnika</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2420153435</SimpleData>
+		<SimpleData name="other_tags">&quot;layer&quot;=&gt;&quot;-2&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;shelter&quot;=&gt;&quot;yes&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;tunnel&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9449088,50.0707439</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Teatr SĹ‚owackiego 01</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2420200260</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0801.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9456263,50.0646175</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Lubicz</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2420200261</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0851.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9511035,50.0650488</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Lubicz</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2420200262</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0851.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.952247,50.065182</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Teatr SĹ‚owackiego 03</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2420216111</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0801.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9449845,50.0641923</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Lubicz</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2420233974</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0851.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.951684,50.0655639</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Uniwersytet Ekonomiczny</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2420233975</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0852.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9522054,50.0675583</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Uniwersytet Ekonomiczny</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2420233976</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0852.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9526646,50.0683695</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo GrzegĂłrzeckie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2420246141</SimpleData>
+		<SimpleData name="other_tags">&quot;bus&quot;=&gt;&quot;yes&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0809.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9577358,50.0575518</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>StarowiĹ›lna</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2420263459</SimpleData>
+		<SimpleData name="other_tags">&quot;bus&quot;=&gt;&quot;yes&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0807.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.946129,50.0573087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dworzec Towarowy 02</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2420286329</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9404365,50.0759118</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dworzec Towarowy 01</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2420286330</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;wheelchair&quot;=&gt;&quot;limited&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9402228,50.0760026</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Nowy Kleparz 02</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2420286331</SimpleData>
+		<SimpleData name="other_tags">&quot;electrified&quot;=&gt;&quot;contact_line&quot;,&quot;gauge&quot;=&gt;&quot;1435&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9365297,50.0735113</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Kampus UJ 01</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2420979790</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0291.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9014789,50.0240483</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Kampus UJ 02</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2420979795</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0291.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9020484,50.0247654</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ruczaj 01</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2421242332</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0706.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9051892,50.0269345</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ruczaj 02</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2421242341</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0706.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9060382,50.0272566</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Norymberska 01</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2421261471</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0527.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9122283,50.0298144</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>LipiĹ„skiego 02</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2421317346</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0528.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.924991,50.0307287</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>LipiĹ„skiego 01</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2421317351</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0528.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9249792,50.0307649</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Borsucza</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2421481610</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0551.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9285009,50.0305096</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Borsucza</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2421481611</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0551.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9290919,50.0305452</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>BroĹĽka</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2421485635</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9318972,50.0304972</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ĺagiewniki</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2421489794</SimpleData>
+		<SimpleData name="other_tags">&quot;operator&quot;=&gt;&quot;Miejskie PrzedsiÄ™biorstwo Komunikacyjne S.A. w Krakowie&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0553.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9370237,50.0304747</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ĺagiewniki</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2421493335</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0553.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9359338,50.0294996</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>RzemieĹ›lnicza</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2421547630</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0559.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9383603,50.0328992</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>BieĹĽanowska</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2421888488</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;website&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0646.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9794443,50.0236224</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Kapelanka</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2422272345</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0523.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9220102,50.0449878</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Borek FaĹ‚Ä™cki I</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2422538507</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0743.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9278252,50.0145601</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Solvay</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2422550518</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0561.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9293893,50.0157663</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo Grunwaldzkie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2422656435</SimpleData>
+		<SimpleData name="other_tags">&quot;bench&quot;=&gt;&quot;yes&quot;,&quot;bus&quot;=&gt;&quot;yes&quot;,&quot;name:pl&quot;=&gt;&quot;Rondo Grunwaldzkie&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;shelter&quot;=&gt;&quot;yes&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0501.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9309536,50.0485728</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Orzeszkowej</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2422680047</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0872.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9389434,50.0506694</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ĺšw.Gertrudy</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2422880689</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0817.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9408506,50.0584617</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>StarowiĹ›lna</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2423003234</SimpleData>
+		<SimpleData name="other_tags">&quot;bus&quot;=&gt;&quot;yes&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0807.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9460278,50.0572586</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>StarowiĹ›lna</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2423003235</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0807.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9445456,50.0573091</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ĺšw. WawrzyĹ„ca</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2423056677</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0816.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9511319,50.0511125</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Cichy KÄ…cik</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2423298435</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0347.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9033929,50.062986</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Teatr SĹ‚owackiego 04</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2423481568</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0801.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.945152,50.0651525</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>PÄ™dzichĂłw</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2423789750</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9375141,50.0696301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>PÄ™dzichĂłw</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2423789754</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9375456,50.0696427</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dworzec Towarowy</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2423804378</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9396806,50.0749597</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Nowy Kleparz 01</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2423804379</SimpleData>
+		<SimpleData name="other_tags">&quot;electrified&quot;=&gt;&quot;contact_line&quot;,&quot;gauge&quot;=&gt;&quot;1435&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9365818,50.0734866</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Poczta GĹ‚Ăłwna</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2424015724</SimpleData>
+		<SimpleData name="other_tags">&quot;name:de&quot;=&gt;&quot;Hauptpost&quot;,&quot;name:pl&quot;=&gt;&quot;Poczta GĹ‚Ăłwna&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0806.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9425326,50.0592284</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo GrzegĂłrzeckie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2424076383</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0809.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9589469,50.0569182</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo GrzegĂłrzeckie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2424076384</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0809.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9602845,50.0578951</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Hala Targowa</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2424088455</SimpleData>
+		<SimpleData name="other_tags">&quot;bus&quot;=&gt;&quot;yes&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;shelter&quot;=&gt;&quot;yes&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0808.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9488829,50.058652</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Hala Targowa</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2424088456</SimpleData>
+		<SimpleData name="other_tags">&quot;bus&quot;=&gt;&quot;yes&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;shelter&quot;=&gt;&quot;yes&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0808.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9488242,50.0586812</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Os. PiastĂłw</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2424134783</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0124519,50.1021105</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Politechnika</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2424198631</SimpleData>
+		<SimpleData name="other_tags">&quot;layer&quot;=&gt;&quot;-2&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;shelter&quot;=&gt;&quot;yes&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;tunnel&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9448387,50.0707403</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>NowosÄ…decka</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2424534762</SimpleData>
+		<SimpleData name="other_tags">&quot;network&quot;=&gt;&quot;Komunikacja Miejska w Krakowie&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;website&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0627.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9646954,50.0134487</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Witosa 02</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2424655425</SimpleData>
+		<SimpleData name="other_tags">&quot;network&quot;=&gt;&quot;Komunikacja Miejska w Krakowie&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;website&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0583.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9557877,50.0124344</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dworzec GĹ‚Ăłwny ZachĂłd 02</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2424803961</SimpleData>
+		<SimpleData name="other_tags">&quot;name:en&quot;=&gt;&quot;Main Station West&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9453912,50.0678045</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Komorowskiego</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2425631194</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0300.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9218471,50.0533952</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Cmentarz Rakowicki</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2425718627</SimpleData>
+		<SimpleData name="other_tags">&quot;electrified&quot;=&gt;&quot;contact_line&quot;,&quot;gauge&quot;=&gt;&quot;1435&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0854.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9573315,50.0739424</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Muzeum Fotografii</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2425780276</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0853.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9542753,50.0704765</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Muzeum Fotografii</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2425780285</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0853.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9546076,50.0709903</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>DÄ…bie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2426058890</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9791852,50.0607241</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Francesco Nullo</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2426058892</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9667934,50.0600009</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Teatr VariĂ©tĂ©</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2426058893</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9625285,50.0588582</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Plaza (nĹĽ)</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2426058894</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9839899,50.0630298</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>M1 Al. Pokoju</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2426058896</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9963239,50.0655023</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>M1 Al. Pokoju</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2426058897</SimpleData>
+		<SimpleData name="other_tags">&quot;operator&quot;=&gt;&quot;1, 14, 22, 62 Trump&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9974971,50.0656706</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ofiar DÄ…bia</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2426058898</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9762903,50.0595975</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>BieĹ„czycka</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2426068335</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0203599,50.075578</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Centralna</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2426068337</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0122007,50.0692017</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>WzgĂłrza KrzesĹ‚awickie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2426087293</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0650224,50.0945227</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Kopiec Wandy NĹ»</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2426893478</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0212.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0670509,50.0696764</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>PleszĂłw</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2427003514</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0218.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.1173283,50.0726187</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Kleeberga</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2427200899</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0144.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0126404,50.0957644</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Piasta KoĹ‚odzieja</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2427215149</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.013066,50.0986111</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Mistrzejowice</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2427246145</SimpleData>
+		<SimpleData name="other_tags">&quot;network&quot;=&gt;&quot;MPK KrakĂłw&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0139.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9963974,50.0952799</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>MiĹ›nieĹ„ska</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2427246149</SimpleData>
+		<SimpleData name="other_tags">&quot;network&quot;=&gt;&quot;KMK&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0140.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9999641,50.0944588</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Batorego</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2427903882</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9288508,50.0670281</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Bronowice SKA 02</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2427984132</SimpleData>
+		<SimpleData name="other_tags">&quot;operator&quot;=&gt;&quot;Line 8&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;shelter&quot;=&gt;&quot;yes&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0359.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.8885959,50.0815243</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Bronowice</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2428077846</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0357.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9006875,50.0777617</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Bronowice</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2428098333</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0357.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9013276,50.0771489</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Plac Centralny im. R. Reagana</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2428234771</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;shelter&quot;=&gt;&quot;yes&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0105.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0383798,50.0713062</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Suche Stawy</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2428299802</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0210.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0590669,50.0674663</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Klasztorna</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2428299807</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0189.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0521338,50.0686049</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Politechnika 02</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2429438683</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9450491,50.0709589</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Klimeckiego</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2431520653</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0294.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9675718,50.0489814</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>MaĹ‚y PĹ‚aszĂłw P+R</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2431520659</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0671.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0006189,50.040189</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>MaĹ‚y PĹ‚aszĂłw P+R</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2431520660</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0671.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0005591,50.040229</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>ZabĹ‚ocie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2431520663</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0619.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9651699,50.0496962</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo GrzegĂłrzeckie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2431530708</SimpleData>
+		<SimpleData name="other_tags">&quot;network&quot;=&gt;&quot;Komunikacja Miejska w Krakowie&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;website&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0809.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9592292,50.0584493</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Borek FaĹ‚Ä™cki</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2431859270</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0562.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9265527,50.0131702</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Grota-Roweckiego 02</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2846212107</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0526.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9211317,50.0316083</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Grota-Roweckiego 01</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2846212108</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0526.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9202166,50.0318688</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Wawel</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">2992273250</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0818.htm&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9396227,50.0544532</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ĺagiewniki SKA 02</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">3150646518</SimpleData>
+		<SimpleData name="ref">02</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;https://rozklady.mpk.krakow.pl/?lang=PL&amp;akcja=przystanek&amp;rozklad=20220514&amp;przystanek=xYFhZ2lld25pa2kgU0tBIDAy&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9325929,50.0221016</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dworcowa</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">3204607912</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0644.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9710558,50.0326846</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Muzeum InĹĽynierii Miejskiej</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">3526822325</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9475294,50.0499565</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>DajwĂłr</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">3526833498</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.950603,50.0506255</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Tauron Arena KrakĂłw al. Pokoju</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">3623688655</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.990214,50.0644402</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Tauron Arena KrakĂłw al. Pokoju</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">3623688656</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9888731,50.0641686</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo CzyĹĽyĹ„skie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">3629965034</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0180203,50.0741826</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo CzyĹĽyĹ„skie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">3629965035</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0160879,50.0735724</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo CzyĹĽyĹ„skie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">3629965036</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0188582,50.0732996</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Rondo CzyĹĽyĹ„skie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">3629965037</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0170793,50.0727862</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ĺagiewniki ZUS (nĹĽ)</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">3661984748</SimpleData>
+		<SimpleData name="ref">01</SimpleData>
+		<SimpleData name="other_tags">&quot;on_demand&quot;=&gt;&quot;yes&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0489.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9339225,50.0245772</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dworzec PĹ‚aszĂłw Estakada</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">3723474949</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;website&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0470.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9770683,50.0334663</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dworzec PĹ‚aszĂłw Estakada</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">3723474950</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0470.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9770279,50.0335001</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Lipska</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">3723474951</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0671.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.982964,50.0398131</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Muzeum Lotnictwa</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">4068126774</SimpleData>
+		<SimpleData name="other_tags">&quot;network&quot;=&gt;&quot;Komunikacja Miejska w Krakowie&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9904418,50.0735101</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Muzeum Lotnictwa</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">4068126775</SimpleData>
+		<SimpleData name="other_tags">&quot;network&quot;=&gt;&quot;Komunikacja Miejska w Krakowie&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;wheelchair&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9904348,50.0735458</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Tauron Arena KrakĂłw Wieczysta</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">4069652993</SimpleData>
+		<SimpleData name="other_tags">&quot;network&quot;=&gt;&quot;Komunikacja Miejska w Krakowie&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9852019,50.0720961</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Czerwone Maki P+R</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">4431180541</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.8894199,50.0184823</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Salwator</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">4557118642</SimpleData>
+		<SimpleData name="other_tags">&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;wheelchair&quot;=&gt;&quot;no&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9174007,50.0526224</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dworzec Towarowy</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">4559858147</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9406607,50.0754769</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Politechnika 01</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">5018097188</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.945075,50.071152</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Nowy BieĹĽanĂłw P+R</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">5322817078</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0702.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.023293,50.0156671</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ĺagiewniki SKA 03</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">5446809570</SimpleData>
+		<SimpleData name="ref">03</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;start_date&quot;=&gt;&quot;27.08.2022&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9331143,50.021001</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>KurdwanĂłw P+R 01</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">5728702340</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9504195,50.0135729</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>PleszĂłw</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">6337324124</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0218.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.1173144,50.0726719</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>WzgĂłrza KrzesĹ‚awickie</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">6515685477</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0125.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0652754,50.0949191</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>GĹ‚owackiego 01</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">6751743712</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9068009,50.0753634</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Brama nr 5 NĹ»</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">8551881277</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;,&quot;url&quot;=&gt;&quot;http://rozklady.mpk.krakow.pl/aktualne/p/p0215.htm&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>20.0915898,50.0690595</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dworzec Towarowy 72</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">8753082235</SimpleData>
+		<SimpleData name="other_tags">&quot;railway&quot;=&gt;&quot;tram_stop&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.940736,50.0754623</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>BratysĹ‚awska (koĹ„cowy)</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">9723305274</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9346715,50.0829842</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ĺagiewniki SKA 01</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">9740014630</SimpleData>
+		<SimpleData name="ref">01</SimpleData>
+		<SimpleData name="other_tags">&quot;opening_date&quot;=&gt;&quot;27.08.2022&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9316963,50.0203292</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Sanktuarium BoĹĽego MiĹ‚osierdzia</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">9944270972</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;start_date&quot;=&gt;&quot;27.08.2022&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9362647,50.0177785</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Sanktuarium BoĹĽego MiĹ‚osierdzia</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">9944270973</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;start_date&quot;=&gt;&quot;27.08.2022&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9363184,50.0177904</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Turowicza</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">9955186236</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;start_date&quot;=&gt;&quot;27.08.2022&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9440994,50.0151187</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Turowicza</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">9955186237</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;start_date&quot;=&gt;&quot;27.08.2022&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9444358,50.0150821</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>KurdwanĂłw P+R 03</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">9955186238</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;start_date&quot;=&gt;&quot;27.08.2022&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9480372,50.0140511</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>KurdwanĂłw P+R 10</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">9955186239</SimpleData>
+		<SimpleData name="other_tags">&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;start_date&quot;=&gt;&quot;27.08.2022&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9476668,50.014164</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Ĺagiewniki SKA 04</name>
+	<ExtendedData><SchemaData schemaUrl="#test2">
+		<SimpleData name="osm_id">9961675623</SimpleData>
+		<SimpleData name="ref">04</SimpleData>
+		<SimpleData name="other_tags">&quot;opening_date&quot;=&gt;&quot;27.08.2022&quot;,&quot;public_transport&quot;=&gt;&quot;stop_position&quot;,&quot;railway&quot;=&gt;&quot;tram_stop&quot;,&quot;tram&quot;=&gt;&quot;yes&quot;</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>19.9325406,50.0221143</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
