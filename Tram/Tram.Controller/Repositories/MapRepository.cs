@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.DirectX;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -17,9 +18,36 @@ namespace Tram.Controller.Repositories
 
         public static void Initialize()
         {
+            ReadTramStops();
             ReadTramRoutes();
             EstabilishRoutes();
             SetBasicNodes();
+        }
+
+        public static void ReadTramStops()
+        {
+            TramStops = new List<TramStop>();
+
+            XDocument doc = XDocument.Load(@"KML/Tram_Stop.kml");
+            XElement root = doc.Root;
+            XNamespace ns = root.GetDefaultNamespace();
+
+            var placemarks = doc.Descendants(ns + "Placemark").ToList();
+
+            foreach (XElement placemark in placemarks)
+            {
+                var name = placemark.Elements(ns + "name").FirstOrDefault()?.Value ?? "-";
+
+                var point = placemark.Elements(ns + "Point").FirstOrDefault().Value;
+                var coo = point.Split(',');
+
+                var tramStop = new TramStop()
+                {
+                    Name = name,
+                    Coordinates = new Vector2(float.Parse(coo[0]), float.Parse(coo[1]))
+                };
+                TramStops.Add(tramStop);
+            }
         }
 
         public static void ReadTramRoutes()

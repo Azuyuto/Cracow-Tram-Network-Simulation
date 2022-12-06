@@ -173,7 +173,18 @@ namespace Tram.Simulation.Manager
 
                 vertexes.Add(DirectxHelper.CreateCircle(stopX, stopY,
                                 Color.Red.ToArgb(),
-                                ViewConsts.POINT_RADIUS * 10,
+                                ViewConsts.POINT_RADIUS * 5,
+                                ViewConsts.POINT_PRECISION));
+            }
+
+            foreach (var stop in MapRepository.TramStops)
+            {
+                float stopX = CalculateXPosition(stop.Coordinates.X);
+                float stopY = CalculateYPosition(stop.Coordinates.Y);
+
+                vertexes.Add(DirectxHelper.CreateCircle(stopX, stopY,
+                                Color.Blue.ToArgb(),
+                                ViewConsts.POINT_RADIUS * 5,
                                 ViewConsts.POINT_PRECISION));
             }
         }
