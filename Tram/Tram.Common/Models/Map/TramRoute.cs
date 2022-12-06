@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ namespace Tram.Common.Models.Map
         public string TramNumber { get; set; }
         public List<LineString> LineStrings { get; set; }
         public List<MapNode> Nodes { get; set; }
+        public List<TramStop> TramStops { get; set; }
 
         public TramRoute()
         {

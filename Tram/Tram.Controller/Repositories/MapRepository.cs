@@ -1,6 +1,7 @@
 ﻿using Microsoft.DirectX;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,7 @@ namespace Tram.Controller.Repositories
             ReadTramRoutes();
             EstabilishRoutes();
             SetBasicNodes();
+            SetTramStopsOnRoutes();
         }
 
         public static void ReadTramStops()
@@ -40,11 +42,13 @@ namespace Tram.Controller.Repositories
 
                 var point = placemark.Elements(ns + "Point").FirstOrDefault().Value;
                 var coo = point.Split(',');
+                var x = SafeParse(coo[0]);
+                var y = SafeParse(coo[1]);
 
                 var tramStop = new TramStop()
                 {
                     Name = name,
-                    Coordinates = new Vector2(float.Parse(coo[0]), float.Parse(coo[1]))
+                    Coordinates = new Vector2(x, y)
                 };
                 TramStops.Add(tramStop);
             }
@@ -78,7 +82,9 @@ namespace Tram.Controller.Repositories
                         foreach (var c in coordinates)
                         {
                             var coo = c.Split(',');
-                            lineString.Coordinates.Add(new Microsoft.DirectX.Vector2(float.Parse(coo[0]), float.Parse(coo[1])));
+                            var x = SafeParse(coo[0]);
+                            var y = SafeParse(coo[1]);
+                            lineString.Coordinates.Add(new Microsoft.DirectX.Vector2(x, y));
                         }
                         tramRoute.LineStrings.Add(lineString);
                     }
@@ -168,6 +174,34 @@ namespace Tram.Controller.Repositories
                     }
                 }
             }
+        }
+
+        public static void SetTramStopsOnRoutes()
+        {
+            foreach(var t in TramRoutes)
+            {
+                foreach(var l in t.LineStrings)
+                {
+                    foreach(var s in TramStops)
+                    {
+                        if (s.Coordinates.Equals(l.Coordinates)) {
+                            t.TramStops.Add(s);
+                        }
+                    }
+                }
+            }
+        }
+        private static float SafeParse(string input)
+        {
+            if (String.IsNullOrEmpty(input)) { throw new ArgumentNullException("input"); }
+
+            float res;
+            if (Single.TryParse(input, NumberStyles.Float, CultureInfo.InvariantCulture, out res))
+            {
+                return res;
+            }
+
+            return 0.0f; // Or perhaps throw your own exception type
         }
     }
 }
