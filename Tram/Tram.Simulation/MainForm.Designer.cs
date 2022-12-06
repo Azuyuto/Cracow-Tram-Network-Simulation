@@ -57,6 +57,7 @@
             this.renderPanel.Name = "renderPanel";
             this.renderPanel.Size = new System.Drawing.Size(715, 715);
             this.renderPanel.TabIndex = 1;
+            this.renderPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.renderPanel_Paint);
             this.renderPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.renderPanel_MouseMove);
             // 
             // zoomInButton

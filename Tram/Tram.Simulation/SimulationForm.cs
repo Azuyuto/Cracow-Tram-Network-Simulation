@@ -43,7 +43,7 @@ namespace Tram.Simulation
 
         public void Render(Action<Device, Vector3> renderAction)
         {
-            device.Transform.Projection = Matrix.PerspectiveFovLH((float)Math.PI / 4, renderPanel.Width / renderPanel.Height, 1f, 1000f);
+            device.Transform.Projection = Matrix.PerspectiveFovLH((float)Math.PI / 4, renderPanel.Width / renderPanel.Height, 1.0f, 1000f);
             device.Transform.View = Matrix.LookAtLH(cameraPosition, cameraTarget, new Vector3(0, 1, 0));
             device.RenderState.Lighting = false;
             device.RenderState.CullMode = Cull.None;

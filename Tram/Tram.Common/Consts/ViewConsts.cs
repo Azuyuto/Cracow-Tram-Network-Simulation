@@ -12,14 +12,13 @@ namespace Tram.Common.Consts
 
         public const int START_CAMERA_Z = 125;
 
-
-        public const float POINT_RADIUS = 0.045f;
-        public const float POINT_RADIUS_LINE = 0.45f;
+        //public static int POINT_RADIUS_SCALAR = 30;
+        public const float POINT_RADIUS = 0.0045f;
 
         public const int POINT_PRECISION = 24;
 
 
-        public static readonly Color LINE_BASIC_COLOR = Color.LightSkyBlue;
+        public static readonly Color LINE_BASIC_COLOR = Color.Red;
 
         public static readonly Color LINE_UNDERGROUND_COLOR = Color.Black;
 

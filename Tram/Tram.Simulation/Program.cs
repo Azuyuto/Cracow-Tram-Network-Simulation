@@ -44,12 +44,13 @@ namespace Tram.Simulation
             using (SimulationForm form = new SimulationForm(simulationManager))
             {
                 ZTPRepository.Initialize();
+                MapRepository.Initialize();
                 form.Init();
                 form.Show();
                 simulationManager.LastTimeUpdate = DateTime.Now;
                 simulationManager.IntervalMiliseconds = 1000;
                 simulationManager.Timer = new TimeSpan(7, 0, 0);
-                simulationManager.InitMap();
+                simulationManager.InitMap3();
 
                 while (form.Created)
                 {

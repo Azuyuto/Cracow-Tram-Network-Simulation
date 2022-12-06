@@ -47,7 +47,7 @@
             this.sidebarPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebarPanel.Location = new System.Drawing.Point(0, 0);
             this.sidebarPanel.Name = "sidebarPanel";
-            this.sidebarPanel.Size = new System.Drawing.Size(172, 566);
+            this.sidebarPanel.Size = new System.Drawing.Size(172, 814);
             this.sidebarPanel.TabIndex = 0;
             // 
             // timerLabel
@@ -90,10 +90,9 @@
             // 
             // renderPanel
             // 
-            this.renderPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.renderPanel.Location = new System.Drawing.Point(172, 0);
+            this.renderPanel.Location = new System.Drawing.Point(178, 8);
             this.renderPanel.Name = "renderPanel";
-            this.renderPanel.Size = new System.Drawing.Size(953, 566);
+            this.renderPanel.Size = new System.Drawing.Size(800, 800);
             this.renderPanel.TabIndex = 1;
             this.renderPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.renderPanel_MouseMove);
             // 
@@ -101,7 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1125, 566);
+            this.ClientSize = new System.Drawing.Size(985, 814);
             this.Controls.Add(this.renderPanel);
             this.Controls.Add(this.sidebarPanel);
             this.Name = "SimulationForm";

@@ -276,6 +276,11 @@ namespace Tram.Simulation
             cameraPosition.X = cameraPosition.Y = cameraTarget.X = cameraTarget.Y = 0;
         }
 
+        private void renderPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void renderPanel_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.Button.HasFlag(MouseButtons.Left))
