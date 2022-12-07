@@ -17,7 +17,5 @@ namespace Tram.Common.Models
             
             public List<float> NextStopIntervals { get; set; }
         }
-
-        public Dictionary<string, TramCapacity> Capacity { get; set; }
     }
 }

@@ -24,10 +24,6 @@ namespace Tram.Common.Consts
 
         public static readonly Color POINT_NORMAL_COLOR = Color.LightSlateGray;
 
-        public static readonly Color GREEN_LIGHT_COLOR = Color.Green;
-
-        public static readonly Color RED_LIGHT_COLOR = Color.Red;
-
         public static readonly Color STOP_COLOR = Color.Goldenrod;
 
         public static readonly Color SELECTED_COLOR = Color.Black;

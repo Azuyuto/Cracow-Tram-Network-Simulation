@@ -29,8 +29,6 @@ namespace Tram.Controller.Controllers
 
         public List<TramLine> Lines { get; set; }
 
-        public List<CarIntersection> CarIntersections { get; set; }
-
         public DateTime ActualRealTime { get; set; }
 
         #endregion Public Properties
@@ -75,8 +73,6 @@ namespace Tram.Controller.Controllers
             {
                 // Update trams
                 vehiclesController.Update(sampleDeltaTime);
-
-                CheckCarIntersections(sampleDeltaTime);
             }
 
             StartNewCourses();                        
@@ -90,35 +86,8 @@ namespace Tram.Controller.Controllers
         {
             Lines = repository.GetLines();
             Map = repository.GetMap();
-            CarIntersections = repository.GetCarIntersections();
             Vehicles = new List<Vehicle>();
             directxController.InitMap();
-        }
-
-        private void CheckCarIntersections(float deltaTime)
-        {
-            foreach (var intersection in CarIntersections)
-            {
-                intersection.TimeToChange -= deltaTime;
-                if (intersection.TimeToChange <= 0)
-                {
-                    if (intersection.Node.LightState == LightState.Green)
-                    {
-                        intersection.Node.LightState = LightState.Yellow;
-                        intersection.TimeToChange = CalculationConsts.ORANGE_LIGHT_INTERVAL;
-                    }
-                    else if (intersection.Node.LightState == LightState.Yellow)
-                    {
-                        intersection.Node.LightState = LightState.Red;
-                        intersection.TimeToChange = intersection.RedInterval;
-                    }
-                    else if(intersection.Node.LightState == LightState.Red)
-                    {
-                        intersection.Node.LightState = LightState.Green;
-                        intersection.TimeToChange = intersection.GreenInterval;
-                    }
-                }
-            }
         }
 
         private void StartNewCourses()

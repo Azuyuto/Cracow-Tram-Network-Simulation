@@ -12,7 +12,5 @@ namespace Tram.Controller.Repositories
         List<Node> GetMap();
 
         List<TramLine> GetLines();
-
-        List<CarIntersection> GetCarIntersections();
     }
 }

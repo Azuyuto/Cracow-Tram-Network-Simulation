@@ -19,6 +19,7 @@ namespace Tram.Common.Models.Map
         {
             LineStrings = new List<LineString>();
             Nodes = new List<MapNode>();
+            TramStops = new List<TramStop>();
         }
     }
 }

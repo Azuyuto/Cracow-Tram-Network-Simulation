@@ -26,9 +26,18 @@ namespace Tram.Simulation.Manager
         public TimeSpan Timer { get; set; }
         public DateTime LastTimeUpdate { get; set; }
 
+        public bool ShowReal { get; set; }
+        public bool ShowZTP { get; set; }
+
         private List<CustomVertex.PositionColored[]> vertexes;
         private List<CustomVertex.PositionColored[]> edges;
         private float minX, maxX, minY, maxY;
+
+        public SimulationManager()
+        {
+            ShowReal = true;
+            ShowZTP = true;
+        }
 
         public void StartSimulation()
         {
@@ -166,26 +175,32 @@ namespace Tram.Simulation.Manager
                 }
             }
 
-            foreach (var stop in ZTPRepository.Stops)
+            if(ShowReal)
             {
-                float stopX = CalculateXPosition(stop.StopCoordinates.X);
-                float stopY = CalculateYPosition(stop.StopCoordinates.Y);
+                foreach (var stop in MapRepository.TramStops)
+                {
+                    float stopX = CalculateXPosition(stop.Coordinates.X);
+                    float stopY = CalculateYPosition(stop.Coordinates.Y);
 
-                vertexes.Add(DirectxHelper.CreateCircle(stopX, stopY,
-                                Color.Red.ToArgb(),
-                                ViewConsts.POINT_RADIUS * 5,
-                                ViewConsts.POINT_PRECISION));
+                    vertexes.Add(DirectxHelper.CreateCircle(stopX, stopY,
+                                    Color.Blue.ToArgb(),
+                                    ViewConsts.POINT_RADIUS * 5,
+                                    ViewConsts.POINT_PRECISION));
+                }
             }
 
-            foreach (var stop in MapRepository.TramStops)
+            if(ShowZTP)
             {
-                float stopX = CalculateXPosition(stop.Coordinates.X);
-                float stopY = CalculateYPosition(stop.Coordinates.Y);
+                foreach (var stop in ZTPRepository.Stops)
+                {
+                    float stopX = CalculateXPosition(stop.StopCoordinates.X);
+                    float stopY = CalculateYPosition(stop.StopCoordinates.Y);
 
-                vertexes.Add(DirectxHelper.CreateCircle(stopX, stopY,
-                                Color.Blue.ToArgb(),
-                                ViewConsts.POINT_RADIUS * 5,
-                                ViewConsts.POINT_PRECISION));
+                    vertexes.Add(DirectxHelper.CreateCircle(stopX, stopY,
+                                    Color.Red.ToArgb(),
+                                    ViewConsts.POINT_RADIUS * 5,
+                                    ViewConsts.POINT_PRECISION));
+                }
             }
         }
 

@@ -11,5 +11,7 @@ namespace Tram.Common.Models.Map
     {
         public string Name { get; set; }
         public Vector2 Coordinates { get; set; }
+
+        public string StopID { get; set; }
     }
 }

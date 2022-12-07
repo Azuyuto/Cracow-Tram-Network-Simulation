@@ -11,6 +11,6 @@ namespace Tram.Common.Models.Map
     {
         public Vector2 Coordinates { get; set; }
         public bool IsTramStop { get; set; }
-        public int StopID { get; set; }
+        public string StopID { get; set; }
     }
 }

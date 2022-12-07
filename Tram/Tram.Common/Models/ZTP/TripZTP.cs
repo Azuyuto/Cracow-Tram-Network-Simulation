@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Tram.Common.Models.ZTP;
 
 namespace TramNetwork.Common.Models.ZTP
 {

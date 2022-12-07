@@ -11,7 +11,6 @@ namespace Tram.Controller.Controllers
     public class VehiclesController
     {
         private MainController mainController;
-        private CapacityController capacityController;
 
         #region Public Methods
 
@@ -20,11 +19,6 @@ namespace Tram.Controller.Controllers
             if (mainController == null)
             {
                 mainController = Kernel.Get<MainController>();
-            }
-
-            if (capacityController == null)
-            {
-                capacityController = Kernel.Get<CapacityController>();
             }
 
             foreach (var vehicle in mainController.Vehicles)
@@ -81,8 +75,7 @@ namespace Tram.Controller.Controllers
                 //int timeToStop = vehicle.Departure.NextStopIntervals.Count > vehicle.LastVisitedStops.Count ? (int)vehicle.Departure.NextStopIntervals[vehicle.LastVisitedStops.Count] : 0;
                 //vehicle.DelaysHistory.Add(((mainController.ActualRealTime - vehicle.LastDepartureTime).TotalMinutes - timeToStop) * 60);
 
-                double timeToBoard = capacityController.SetTramCapacity(vehicle);
-                vehicle.Speed = (float)timeToBoard * VehicleConsts.ACCELERATION * 3600 / 1000; // when speed comes to 0, then tram will run
+                vehicle.Speed = VehicleConsts.ACCELERATION * 3600 / 1000; // when speed comes to 0, then tram will run
             }
             else if (vehicle.Speed < CalculationConsts.EPSILON && !vehicle.IsOnStop && vehicle.IsIntersectionReached(out tramIntersection))
             {
@@ -104,7 +97,7 @@ namespace Tram.Controller.Controllers
                     tramIntersection.Vehicles.Enqueue(vehicle);
                 }
             }
-            else if (vehicle.Speed < CalculationConsts.EPSILON && !vehicle.IsOnStop && vehicle.IsOnLights() && !vehicle.IsOnLightsAndHasRedLight(deltaTime))
+            else if (vehicle.Speed < CalculationConsts.EPSILON && !vehicle.IsOnStop)
             {
                 vehicle.Speed = PhysicsHelper.GetNewSpeed(vehicle.Speed, deltaTime, true);
             }
@@ -137,10 +130,6 @@ namespace Tram.Controller.Controllers
                 }
             }
             else if (vehicle.IsAnyVehicleClose(deltaTime))
-            {
-                vehicle.Speed = PhysicsHelper.GetNewSpeed(vehicle.Speed, deltaTime, false);
-            }
-            else if (vehicle.IsOnLights() && vehicle.IsOnLightsAndHasRedLight(deltaTime))
             {
                 vehicle.Speed = PhysicsHelper.GetNewSpeed(vehicle.Speed, deltaTime, false);
             }

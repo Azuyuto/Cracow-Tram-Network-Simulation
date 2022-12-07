@@ -15,9 +15,6 @@ namespace Tram.Common.Models
 
         public bool IsUnderground { get; set; }
 
-        //Using only when node is car intersection
-        public LightState LightState { get; set; }
-
         public Next Child { get; set; }
 
         public List<Next> Children { get; set; }

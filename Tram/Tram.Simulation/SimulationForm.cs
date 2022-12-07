@@ -13,6 +13,7 @@ using Tram.Controller.Controllers;
 using Tram.Simulation.Manager;
 using Tram.Common.Models;
 using Tram.Common.Consts;
+using TramNetwork.Common.Models.ZTP;
 
 namespace Tram.Simulation
 {
@@ -136,6 +137,18 @@ namespace Tram.Simulation
             {
                 ZoomOutButton_Click(this, new EventArgs());
             }
+        }
+
+        private void showReal_CheckedChanged(object sender, EventArgs e)
+        {
+            simulationManager.ShowReal = showReal.Checked;
+            simulationManager.InitMap3();
+        }
+
+        private void showZTP_CheckedChanged(object sender, EventArgs e)
+        {
+            simulationManager.ShowZTP = showZTP.Checked;
+            simulationManager.InitMap3();
         }
 
         private void renderPanel_MouseMove(object sender, MouseEventArgs e)

@@ -15,7 +15,7 @@ namespace Tram.Controller.Repositories
     public static class MapRepository
     {
         public static List<TramRoute> TramRoutes { get; set; }
-        public static List<TramStop> TramStops { get; set; }
+        public static List<TramStop> TramStops { get; set; } // Blue
 
         public static void Initialize()
         {
@@ -24,6 +24,7 @@ namespace Tram.Controller.Repositories
             EstabilishRoutes();
             SetBasicNodes();
             SetTramStopsOnRoutes();
+            SetNearestZTPStops();
         }
 
         public static void ReadTramStops()
@@ -180,17 +181,33 @@ namespace Tram.Controller.Repositories
         {
             foreach(var t in TramRoutes)
             {
-                foreach(var l in t.LineStrings)
+                foreach(var n in t.Nodes)
                 {
                     foreach(var s in TramStops)
                     {
-                        if (s.Coordinates.Equals(l.Coordinates)) {
+                        if (s.Coordinates.Equals(n.Coordinates)) {
                             t.TramStops.Add(s);
+                            n.IsTramStop = true;
+                            n.StopID = s.StopID;
                         }
                     }
                 }
             }
         }
+
+        private static void SetNearestZTPStops()
+        {
+            foreach(var tramStop in TramStops)
+            {
+                var nearest = ZTPRepository.Stops.Select(a => new
+                {
+                    a.StopID,
+                    Distance = Math.Abs(a.StopCoordinates.X - tramStop.Coordinates.X) + Math.Abs(a.StopCoordinates.Y - tramStop.Coordinates.Y)
+                }).OrderBy(a => a.Distance).FirstOrDefault();
+                tramStop.StopID = nearest.StopID;
+            }
+        }
+
         private static float SafeParse(string input)
         {
             if (String.IsNullOrEmpty(input)) { throw new ArgumentNullException("input"); }

@@ -47,7 +47,6 @@
     <Compile Include="Consts\CalculationConsts.cs" />
     <Compile Include="Consts\VehicleConsts.cs" />
     <Compile Include="Consts\ViewConsts.cs" />
-    <Compile Include="Enums\LightState.cs" />
     <Compile Include="Enums\NodeType.cs" />
     <Compile Include="Extensions\LineExtensions.cs" />
     <Compile Include="Extensions\NodeExtensions.cs" />
@@ -58,13 +57,11 @@
     <Compile Include="Helpers\PhysicsHelper.cs" />
     <Compile Include="Helpers\TimeHelper.cs" />
     <Compile Include="Interfaces\IObjWithCoordinates.cs" />
-    <Compile Include="Models\CarIntersection.cs" />
     <Compile Include="Models\Map\LineString.cs" />
     <Compile Include="Models\Map\MapNode.cs" />
     <Compile Include="Models\Map\TramRoute.cs" />
     <Compile Include="Models\Map\TramStop.cs" />
     <Compile Include="Models\ModelBase.cs" />
-    <Compile Include="Models\TramCapacity.cs" />
     <Compile Include="Models\TramLine.cs" />
     <Compile Include="Models\Node.cs" />
     <Compile Include="Models\TramIntersection.cs" />

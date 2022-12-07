@@ -16,7 +16,6 @@ namespace Tram.Controller.Repositories
         private List<TramIntersection> tramIntersections;
         private List<TramLine> tramLines;
         private List<Node> nodes;
-        private List<CarIntersection> carIntersections;
 
         #region Public Methods
 
@@ -39,8 +38,6 @@ namespace Tram.Controller.Repositories
 
         public List<Node> GetMap() => nodes;
 
-        public List<CarIntersection> GetCarIntersections() => carIntersections;
-
         #endregion Public Methods
 
         #region Private Methods
@@ -55,17 +52,13 @@ namespace Tram.Controller.Repositories
                 bool isDepartureLine = false;
                 //---zmienne pomocnicze do capacity
                 List<string> StartingTimes = new List<string>();
-                List<List<int>> allCapacities = new List<List<int>>();
-                int l = 0;
                 //---
                 foreach (string line in GetFileLines(file))
                 {
                     string[] par = line.Split(';');
                     if (isNewTramLine)
                     {
-                        tramLine = new TramLine() { Id = par[0] + " (" + par[1].Replace("  ", " ").Trim() + ")", Departures = new List<TramLine.Departure>(), MainNodes = new List<Node>(), Capacity= new Dictionary<string, TramCapacity>() };
-                        allCapacities = new List<List<int>>();
-                        l = 0;
+                        tramLine = new TramLine() { Id = par[0] + " (" + par[1].Replace("  ", " ").Trim() + ")", Departures = new List<TramLine.Departure>(), MainNodes = new List<Node>() };
                         isNewTramLine = false;
                     }
                     else if (string.IsNullOrEmpty(par[0]) && !isDepartureLine)
@@ -78,26 +71,6 @@ namespace Tram.Controller.Repositories
                         //linia w drugą stronę, nowa linia
                         isNewTramLine = true;
                         isDepartureLine = false;
-
-                        //przypisanie linii obiektu capacity
-                        int cols = allCapacities[0].Count; //!!!
-                        int rows = allCapacities.Count;
-                        int k = 0, j = 0;
-                        tramLine.Capacity = new Dictionary<string, TramCapacity>();
-                        for (int i = 0; i < cols; i += 3)
-                        {
-                            TramCapacity capacity = new TramCapacity();
-                            for (j = 0; j < rows; j++)
-                            {
-                                capacity.GotIn.Add(allCapacities[j][i]);
-                                capacity.GotOut.Add(allCapacities[j][i + 1]);
-                                capacity.CurrentState.Add(allCapacities[j][i + 2]);
-                            }
-
-                            tramLine.Capacity.Add(StartingTimes[k], capacity);
-                            k++;
-                            j += 3;
-                        }
 
                         tramLines.Add(tramLine);
                     }
@@ -137,17 +110,6 @@ namespace Tram.Controller.Repositories
 
                                 j++;
                             }
-
-                            //wczytanie capacities
-                            allCapacities.Add(new List<int>());
-                            for (int k = 2; k < par.Length - 3; k += 4)
-                            {
-                                allCapacities[l].Add(int.Parse(par[k]));
-                                allCapacities[l].Add(int.Parse(par[k + 1]));
-                                allCapacities[l].Add(int.Parse(par[k + 2]));
-                            }
-
-                            l++;
                         }                
                     }
                 }
@@ -158,7 +120,6 @@ namespace Tram.Controller.Repositories
         {
             nodes = new List<Node>();
             tramIntersections = new List<TramIntersection>();
-            carIntersections = new List<CarIntersection>();
             List<string> childrenStr = new List<string>();
 
             using (var file = new StreamReader(mapPath))
@@ -177,23 +138,11 @@ namespace Tram.Controller.Repositories
                                 Coordinates = new Vector2(float.Parse(par[0], CultureInfo.InvariantCulture.NumberFormat), float.Parse(par[1], CultureInfo.InvariantCulture.NumberFormat)),
                                 Id = par[2],
                                 IsUnderground = par[9] == "1",
-                                LightState = par[6] == "1" ? LightState.Red : LightState.None,
                                 VehiclesOn = new List<Vehicle>(),
                                 Type = par[4] == "1" ? NodeType.TramStop :
                                        par[6] == "1" ? NodeType.CarCross :
                                        !string.IsNullOrEmpty(par[3]) ? NodeType.TramCross : NodeType.Normal
                             };
-                            
-                            if (!string.IsNullOrEmpty(par[7]))
-                            {
-                                carIntersections.Add(new CarIntersection()
-                                {
-                                    Node = node,
-                                    TimeToChange = int.Parse(par[7]),
-                                    GreenInterval = int.Parse(par[7]),
-                                    RedInterval = int.Parse(par[8])
-                                });
-                            }
 
                             StringBuilder childStr = new StringBuilder(";");
                             for (int i = 10; i < par.Length; i++)

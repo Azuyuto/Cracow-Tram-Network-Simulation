@@ -5,6 +5,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Tram.Common.Models.ZTP;
 using TramNetwork.Common.Models.ZTP;
@@ -13,19 +14,53 @@ namespace Tram.Controller.Repositories
 {
     public static class ZTPRepository
     {
+        public static int ServiceID { get; set; }
+
         public static List<NodePair> MapLines { get; set; }
-        public static List<StopTimesZTP> StopTimes { get; set; }
         public static List<LineZTP> Lines { get; set; }
         public static List<TripZTP> Trips { get; set; }
-        public static List<StopZTP> Stops { get; set; }
+        public static List<StopZTP> Stops { get; set; } // RED
+        public static List<StopTimesZTP> StopTimes { get; set; }
+
+        public static Dictionary<string, HashSet<string>> StopDictionary { get; set; }
 
         public static void Initialize()
         {
+            ServiceID = 2;
+
             ReadStopTimesInfo();
             ReadLinesInfo();
             ReadTripsInfo();
             ReadStopsInfo();
             GenerateMapLines();
+
+            SetLists();
+        }
+
+        public static void SetLists()
+        {
+            // Lines
+            foreach(var trip in Trips)
+            {
+                var line = Lines.Where(a => a.RouteID == trip.RouteID).FirstOrDefault();
+                if (line != null)
+                    line.Trips.Add(trip);
+            }
+
+            // Stop Dictionary
+            foreach(var d in StopDictionary)
+            {
+                var trip = Trips.Where(a => a.TripID.Contains(d.Key)).FirstOrDefault();
+                if(trip != null)
+                {
+                    var line = Lines.Where(a => a.RouteID == trip.RouteID).FirstOrDefault();
+                    if(line != null)
+                    {
+                        foreach (var s in d.Value)
+                            line.StopDictionary.Add(s);
+                    }
+                }    
+            }
         }
 
         public static void GenerateMapLines()
@@ -56,6 +91,7 @@ namespace Tram.Controller.Repositories
             try
             {
                 StopTimes = new List<StopTimesZTP>();
+                StopDictionary = new Dictionary<string, HashSet<string>>();
                 using (StreamReader sr = new StreamReader("ZTP/stop_times.txt"))
                 {
                     sr.ReadLine(); // ignore header
@@ -69,7 +105,13 @@ namespace Tram.Controller.Repositories
                         stop.Arrival = stopData[1];
                         stop.Departure = stopData[2];
                         stop.StopID = stopData[3];
-                        StopTimes.Add(stop);
+                        if(stop.TripID.Contains("service_" + ServiceID))
+                        {
+                            if (!StopDictionary.ContainsKey(stop.TripID))
+                                StopDictionary.Add(stop.TripID, new HashSet<string>());
+                            StopDictionary[stop.TripID].Add(stop.StopID);
+                            StopTimes.Add(stop);
+                        }
                     }
                 }
             }
@@ -125,7 +167,8 @@ namespace Tram.Controller.Repositories
                         nextTrip.RouteID = content[1];
                         nextTrip.ServiceID = content[2];
                         nextTrip.Destination = content[3];
-                        Trips.Add(nextTrip);
+                        if(nextTrip.ServiceID == "service_" + ServiceID)
+                            Trips.Add(nextTrip);
                     }
                 }
             }

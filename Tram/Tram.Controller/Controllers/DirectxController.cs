@@ -16,7 +16,6 @@ namespace Tram.Controller.Controllers
         private bool isDeviceInit;
 
         private MainController mainController;
-        private CapacityController capacityController;
         private List<CustomVertex.PositionColored[]> vertexes;
         private List<CustomVertex.PositionColored[]> edges;
 
@@ -40,10 +39,6 @@ namespace Tram.Controller.Controllers
             {
                 mainController = Kernel.Get<MainController>();
             }
-            if (capacityController == null)
-            {
-                capacityController = Kernel.Get<CapacityController>();
-            }
 
             minX = mainController.Map.Min(n => n.Coordinates.X);
             maxX = mainController.Map.Max(n => n.Coordinates.X);
@@ -60,10 +55,9 @@ namespace Tram.Controller.Controllers
                         DirectxHelper.CreateCircle(
                             pX,
                             pY,
-                            node.Type == NodeType.CarCross ? ViewConsts.GREEN_LIGHT_COLOR.ToArgb() :
-                                node.Type == NodeType.TramStop ? ViewConsts.STOP_COLOR.ToArgb() : ViewConsts.POINT_NORMAL_COLOR.ToArgb(),
-                            ViewConsts.POINT_RADIUS,
-                            ViewConsts.POINT_PRECISION));
+                            node.Type == NodeType.TramStop ? ViewConsts.STOP_COLOR.ToArgb() : ViewConsts.POINT_NORMAL_COLOR.ToArgb(),
+                                ViewConsts.POINT_RADIUS,
+                                ViewConsts.POINT_PRECISION));
                 }
 
                 if (node.Child != null)
@@ -105,8 +99,6 @@ namespace Tram.Controller.Controllers
 
             DrawVehicles(device, cameraPosition, selectedVehicle);
 
-            DrawCarInstersections(device);
-
             //DRAW TIME
             text.DrawText(null, time, new Point(12, 11), Color.Black);
             line.Draw(lineVertexes, Color.Black);
@@ -139,7 +131,7 @@ namespace Tram.Controller.Controllers
         {
             foreach (var vehicle in mainController.Vehicles)
             {
-                Color tramColor = capacityController.GetTramColor(vehicle.Passengers);
+                Color tramColor = Color.Green;
                 float pX = CalculateXPosition(vehicle.Position.Coordinates.X);
                 float pY = CalculateYPosition(vehicle.Position.Coordinates.Y);
                 float thickness = GetPointRadius(cameraPosition.Z);
@@ -194,27 +186,6 @@ namespace Tram.Controller.Controllers
                         break;
                     }
                 }
-            }
-        }
-
-        private void DrawCarInstersections(Device device)
-        {
-            foreach (var intersection in mainController.CarIntersections)
-            {
-                float x = CalculateXPosition(intersection.Node.Coordinates.X);
-                float y = CalculateYPosition(intersection.Node.Coordinates.Y);
-                Color color = intersection.Node.LightState == LightState.Green ? Color.Green :
-                              intersection.Node.LightState == LightState.Yellow ? Color.Gold : Color.Red;
-
-                device.DrawUserPrimitives(
-                    PrimitiveType.TriangleFan,
-                    ViewConsts.POINT_PRECISION,
-                    DirectxHelper.CreateCircle(
-                        x,
-                        y,
-                        color.ToArgb(),
-                        ViewConsts.POINT_RADIUS * 2,
-                        ViewConsts.POINT_PRECISION));
             }
         }
 

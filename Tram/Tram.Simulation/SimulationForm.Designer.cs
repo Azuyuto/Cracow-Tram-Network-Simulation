@@ -34,12 +34,16 @@
             this.startButton = new System.Windows.Forms.Button();
             this.titleLabel = new System.Windows.Forms.Label();
             this.renderPanel = new System.Windows.Forms.Panel();
+            this.showReal = new System.Windows.Forms.CheckBox();
+            this.showZTP = new System.Windows.Forms.CheckBox();
             this.sidebarPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // sidebarPanel
             // 
             this.sidebarPanel.BackColor = System.Drawing.SystemColors.Menu;
+            this.sidebarPanel.Controls.Add(this.showZTP);
+            this.sidebarPanel.Controls.Add(this.showReal);
             this.sidebarPanel.Controls.Add(this.timerLabel);
             this.sidebarPanel.Controls.Add(this.stopButton);
             this.sidebarPanel.Controls.Add(this.startButton);
@@ -96,6 +100,32 @@
             this.renderPanel.TabIndex = 1;
             this.renderPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.renderPanel_MouseMove);
             // 
+            // showReal
+            // 
+            this.showReal.AutoSize = true;
+            this.showReal.Checked = true;
+            this.showReal.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.showReal.Location = new System.Drawing.Point(12, 109);
+            this.showReal.Name = "showReal";
+            this.showReal.Size = new System.Drawing.Size(73, 17);
+            this.showReal.TabIndex = 4;
+            this.showReal.Text = "Show real";
+            this.showReal.UseVisualStyleBackColor = true;
+            this.showReal.CheckedChanged += new System.EventHandler(this.showReal_CheckedChanged);
+            // 
+            // showZTP
+            // 
+            this.showZTP.AutoSize = true;
+            this.showZTP.Checked = true;
+            this.showZTP.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.showZTP.Location = new System.Drawing.Point(12, 132);
+            this.showZTP.Name = "showZTP";
+            this.showZTP.Size = new System.Drawing.Size(77, 17);
+            this.showZTP.TabIndex = 5;
+            this.showZTP.Text = "Show ZTP";
+            this.showZTP.UseVisualStyleBackColor = true;
+            this.showZTP.CheckedChanged += new System.EventHandler(this.showZTP_CheckedChanged);
+            // 
             // SimulationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -119,5 +149,7 @@
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.Panel renderPanel;
+        private System.Windows.Forms.CheckBox showZTP;
+        private System.Windows.Forms.CheckBox showReal;
     }
 }

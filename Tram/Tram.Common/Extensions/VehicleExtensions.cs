@@ -40,28 +40,6 @@ namespace Tram.Common.Extensions
             return false;
         }
 
-        public static bool IsOnLights(this Vehicle vehicle) => vehicle.Position.Node2.Type == NodeType.CarCross;
-
-        public static bool IsOnLightsAndHasRedLight(this Vehicle vehicle, float deltaTime)
-        {
-            if (vehicle.Position.Node2.Type == NodeType.CarCross && vehicle.Position.Node2.LightState != LightState.Green)
-            {
-                float speed = PhysicsHelper.GetNewSpeed(vehicle.Speed, deltaTime);
-                float brakingDistance = PhysicsHelper.GetBrakingDistance(speed);
-                float distance = vehicle.RealDistanceTo(vehicle.Position.Node2) - 1;
-                if (vehicle.Position.Node2.LightState == LightState.Red)
-                {
-                    return distance <= brakingDistance;
-                }
-                else if (vehicle.Position.Node2.LightState == LightState.Yellow)
-                {
-                    return distance >= brakingDistance;
-                }
-            }
-
-            return false;
-        }
-
         public static bool IsStillOnIntersection(this Vehicle vehicle)
         {
             return vehicle.CurrentIntersection.Nodes.Any(n => (vehicle.RealDistanceTo(n) - VehicleConsts.LENGTH) < 0) ||
@@ -128,7 +106,7 @@ namespace Tram.Common.Extensions
         private static bool IsNotStraightRoadPredicate(Vehicle vehicle, Node node, float distance, float brakingDistance) => 
                             distance <= brakingDistance && 
                             node.Type != NodeType.Normal && 
-                            (CorrectTramCrossPredicate(vehicle, node) || CorrectStopPredicate(vehicle, node) || CorrectNotGreenCarCrossPredicate(node));
+                            (CorrectTramCrossPredicate(vehicle, node) || CorrectStopPredicate(vehicle, node));
 
         public static bool IsAnyVehicleClose(this Vehicle vehicle, float deltaTime)
         {
@@ -181,11 +159,6 @@ namespace Tram.Common.Extensions
         {
             return node.Type == NodeType.TramCross && 
                    (vehicle.CurrentIntersection == null || !vehicle.CurrentIntersection.Equals(node.Intersection));
-        }
-
-        private static bool CorrectNotGreenCarCrossPredicate(Node node)
-        {
-            return node.Type == NodeType.CarCross && node.LightState != LightState.Green;
         }
     }
 }
