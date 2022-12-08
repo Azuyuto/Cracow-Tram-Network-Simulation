@@ -49,16 +49,14 @@ namespace Tram.Controller.Controllers
             {
                 float pX = CalculateXPosition(node.Coordinates.X); 
                 float pY = CalculateYPosition(node.Coordinates.Y);
-                if (node.Type != NodeType.CarCross)
-                {
-                    vertexes.Add(
-                        DirectxHelper.CreateCircle(
-                            pX,
-                            pY,
-                            node.Type == NodeType.TramStop ? ViewConsts.STOP_COLOR.ToArgb() : ViewConsts.POINT_NORMAL_COLOR.ToArgb(),
-                                ViewConsts.POINT_RADIUS,
-                                ViewConsts.POINT_PRECISION));
-                }
+
+                vertexes.Add(
+                    DirectxHelper.CreateCircle(
+                        pX,
+                        pY,
+                        node.Type == NodeType.TramStop ? ViewConsts.STOP_COLOR.ToArgb() : ViewConsts.POINT_NORMAL_COLOR.ToArgb(),
+                            ViewConsts.POINT_RADIUS,
+                            ViewConsts.POINT_PRECISION));
 
                 if (node.Child != null)
                 {

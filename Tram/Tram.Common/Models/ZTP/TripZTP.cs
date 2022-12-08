@@ -11,5 +11,7 @@ namespace TramNetwork.Common.Models.ZTP
         public string RouteID { get; set; } // route_id
         public string ServiceID { get; set; } // service_id
         public string Destination { get; set; } // trip_headsign
+
+        public StopTimesZTP FirstStart { get; set; }
     }
 }

@@ -7,6 +7,8 @@ namespace Tram.Common.Models
 {
     public class Node : ModelBase, IObjWithCoordinates
     {
+        public string StopID { get; set; }
+
         public Vector2 Coordinates { get; set; }
 
         public NodeType Type { get; set; }

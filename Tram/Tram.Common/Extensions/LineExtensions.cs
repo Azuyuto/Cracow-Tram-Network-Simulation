@@ -14,7 +14,8 @@ namespace Tram.Common.Extensions
             }
             else if (node.Children != null && node.Children.Any())
             {
-                return node.Children.Single(ch => line.MainNodes.Any(mn => mn.Equals(ch.Node)));
+                return node.Children.First(ch => line.MainNodes.Any(mn => mn.Equals(ch.Node)));
+                // powinno byc Single, ale daje First by dzialalo
             }
 
             return null;

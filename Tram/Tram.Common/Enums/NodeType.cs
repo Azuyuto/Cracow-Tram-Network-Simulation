@@ -4,7 +4,6 @@
     {
         Normal,
         TramStop,
-        TramCross,
-        CarCross
+        TramCross
     }
 }

@@ -5,6 +5,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
@@ -23,8 +24,9 @@ namespace Tram.Controller.Repositories
             ReadTramRoutes();
             EstabilishRoutes();
             SetBasicNodes();
-            SetTramStopsOnRoutes();
             SetNearestZTPStops();
+            SetTramStopsOnRoutes();
+            AssignTramRouteToZTPLine();
         }
 
         public static void ReadTramStops()
@@ -71,6 +73,8 @@ namespace Tram.Controller.Repositories
                 {
                     Name = placemark.Elements(ns + "name").FirstOrDefault().Value
                 };
+
+                tramRoute.TramNumber = Regex.Match(tramRoute.Name, @"\d+").Value;
                 var multiGeometries = placemark.Descendants(ns + "MultiGeometry").ToList();
 
                 foreach (XElement mg in multiGeometries)
@@ -140,7 +144,7 @@ namespace Tram.Controller.Repositories
                         // On End
                         if(ls.Coordinates.FirstOrDefault() == tr.Nodes.Last().Coordinates)
                         {
-                            foreach (var c in ls.Coordinates)
+                            foreach (var c in ls.Coordinates.Skip(1))
                             {
                                 tr.Nodes.Add(new MapNode()
                                 {
@@ -150,7 +154,7 @@ namespace Tram.Controller.Repositories
                         }
                         else if(ls.Coordinates.LastOrDefault() == tr.Nodes.Last().Coordinates)
                         {
-                            for(int i = ls.Coordinates.Count() - 1; 0 <= i; i--)
+                            for(int i = ls.Coordinates.Count() - 2; 0 <= i; i--)
                             {
                                 tr.Nodes.Add(new MapNode()
                                 {
@@ -219,6 +223,18 @@ namespace Tram.Controller.Repositories
             }
 
             return 0.0f; // Or perhaps throw your own exception type
+        }
+
+        public static void AssignTramRouteToZTPLine()
+        {
+            foreach (var tramRoute in TramRoutes)
+            {
+                var lineZTP = ZTPRepository.Lines.Where(a => a.LineName == tramRoute.TramNumber).FirstOrDefault();
+                if(lineZTP != null)
+                {
+                    lineZTP.TramRoute = tramRoute;
+                }
+            }
         }
     }
 }

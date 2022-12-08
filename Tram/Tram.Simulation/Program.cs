@@ -16,9 +16,12 @@ namespace Tram.Simulation
         [STAThread]
         static void Main()
         {
+            ZTPRepository.Initialize();
+            MapRepository.Initialize();
+            VehicleRepository.Initialize();
             MainController controller = Kernel.Get<MainController>();
             DirectxController directxController = Kernel.Get<DirectxController>();
-            controller.StartSimulation(TimeHelper.GetTime("05:30"));
+            controller.StartSimulation(TimeHelper.GetTime("07:00"));
 
             using (MainForm form = new MainForm())
             {
@@ -39,32 +42,33 @@ namespace Tram.Simulation
 
 
 
-            var simulationManager = new SimulationManager();
+            //var simulationManager = new SimulationManager();
 
-            using (SimulationForm form = new SimulationForm(simulationManager))
-            {
-                ZTPRepository.Initialize();
-                MapRepository.Initialize();
-                form.Init();
-                form.Show();
-                simulationManager.LastTimeUpdate = DateTime.Now;
-                simulationManager.IntervalMiliseconds = 1000;
-                simulationManager.Timer = new TimeSpan(7, 0, 0);
-                simulationManager.InitMap3();
+            //using (SimulationForm form = new SimulationForm(simulationManager))
+            //{
+            //    ZTPRepository.Initialize();
+            //    MapRepository.Initialize();
+            //    VehicleRepository.Initialize();
+            //    form.Init();
+            //    form.Show();
+            //    simulationManager.LastTimeUpdate = DateTime.Now;
+            //    simulationManager.IntervalMiliseconds = 1000;
+            //    simulationManager.Timer = new TimeSpan(6, 0, 0);
+            //    simulationManager.InitMap3();
 
-                while (form.Created)
-                {
-                    if (simulationManager.ActiveSimulation)
-                        if ((DateTime.Now - simulationManager.LastTimeUpdate).TotalMilliseconds > 1000)
-                        {
-                            simulationManager.UpdateSimulaton();
-                            form.SetTimer(simulationManager.Timer);
-                        }
+            //    while (form.Created)
+            //    {
+            //        if (simulationManager.ActiveSimulation)
+            //            if ((DateTime.Now - simulationManager.LastTimeUpdate).TotalMilliseconds > 1000)
+            //            {
+            //                simulationManager.UpdateSimulaton();
+            //                form.SetTimer(simulationManager.Timer);
+            //            }
 
-                    form.Render(simulationManager.Render); //RENDER SIMULATION
-                    Application.DoEvents();
-                }
-            }
+            //        form.Render(simulationManager.Render); //RENDER SIMULATION
+            //        Application.DoEvents();
+            //    }
+            //}
         }
     }
 }

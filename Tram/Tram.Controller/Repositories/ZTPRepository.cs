@@ -28,12 +28,11 @@ namespace Tram.Controller.Repositories
         {
             ServiceID = 2;
 
-            ReadStopTimesInfo();
-            ReadLinesInfo();
-            ReadTripsInfo();
             ReadStopsInfo();
+            ReadStopTimesInfo();
+            ReadTripsInfo();
+            ReadLinesInfo();
             GenerateMapLines();
-
             SetLists();
         }
 
@@ -103,7 +102,11 @@ namespace Tram.Controller.Repositories
                         var stop = new StopTimesZTP();
                         stop.TripID = stopData[0];
                         stop.Arrival = stopData[1];
-                        stop.Departure = stopData[2];
+                        for(int i = 24; i <= 29; i ++)
+                        {
+                            stopData[2] = Regex.Replace(stopData[2], "^" + i.ToString(), "0" + (i - 24).ToString());
+                        }
+                        stop.Departure = TimeSpan.Parse(stopData[2]);
                         stop.StopID = stopData[3];
                         if(stop.TripID.Contains("service_" + ServiceID))
                         {
@@ -168,7 +171,10 @@ namespace Tram.Controller.Repositories
                         nextTrip.ServiceID = content[2];
                         nextTrip.Destination = content[3];
                         if(nextTrip.ServiceID == "service_" + ServiceID)
+                        {
+                            nextTrip.FirstStart = StopTimes.Where(a => a.TripID == nextTrip.TripID).OrderBy(a => a.Departure).FirstOrDefault();
                             Trips.Add(nextTrip);
+                        }
                     }
                 }
             }

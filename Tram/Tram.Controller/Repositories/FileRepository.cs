@@ -140,7 +140,6 @@ namespace Tram.Controller.Repositories
                                 IsUnderground = par[9] == "1",
                                 VehiclesOn = new List<Vehicle>(),
                                 Type = par[4] == "1" ? NodeType.TramStop :
-                                       par[6] == "1" ? NodeType.CarCross :
                                        !string.IsNullOrEmpty(par[3]) ? NodeType.TramCross : NodeType.Normal
                             };
 

@@ -137,6 +137,9 @@ namespace Tram.Common.Extensions
                 }
             }
 
+            if (node.Child == null && node.Children == null)
+                return false;
+            else
             return node.GetAllNextNodes()
                        .Any(nn => IsAnyVehicleClose(vehicle, speed, brakingDistance, nn.Node, isFirstComparation ? vehicle.RealDistanceTo(nn.Node) : distance + nn.Distance));
         }
@@ -150,7 +153,7 @@ namespace Tram.Common.Extensions
         private static bool CorrectStopPredicate(Vehicle vehicle, Node node)
         {
             return node.Type == NodeType.TramStop && 
-                   !vehicle.LastVisitedStop.Equals(node) &&
+                   (vehicle.LastVisitedStop != null && !vehicle.LastVisitedStop.Equals(node)) &&
                    !vehicle.LastVisitedStops.Any(n => n.Equals(node)) &&
                    vehicle.Line.MainNodes.Any(n => n.Equals(node));
         }

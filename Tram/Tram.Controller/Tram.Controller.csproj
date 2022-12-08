@@ -65,6 +65,7 @@
     <Compile Include="Repositories\FileRepository.cs" />
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Repositories\MapRepository.cs" />
+    <Compile Include="Repositories\VehicleRepository.cs" />
     <Compile Include="Repositories\ZTPRepository.cs" />
   </ItemGroup>
   <ItemGroup>

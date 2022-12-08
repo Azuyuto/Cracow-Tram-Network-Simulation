@@ -21,7 +21,7 @@ namespace Tram.Controller.Controllers
 
         #region Public Properties
 
-        public float SimulationSpeed { get; set; } = 1;
+        public float SimulationSpeed { get; set; } = 100;
 
         public List<Node> Map { get; set; }
 
@@ -63,7 +63,7 @@ namespace Tram.Controller.Controllers
             lastUpdateTime = DateTime.Now;
 
             // Change time 
-            ActualRealTime += new TimeSpan(0, 0, 0, 0, (int)(deltaTime * 1000));
+            ActualRealTime += new TimeSpan(0, 0, 0, 0, (int)(deltaTime * 10000));
 
             //Remove finished courses
             Vehicles.RemoveAll(vehiclesController.FinishCoursePredicate);
@@ -84,8 +84,12 @@ namespace Tram.Controller.Controllers
 
         private void GetAndPrepareModels()
         {
-            Lines = repository.GetLines();
-            Map = repository.GetMap();
+            Lines = VehicleRepository.TramLines;
+            Map = VehicleRepository.Nodes;
+
+            //Lines = repository.GetLines();
+            //Map = repository.GetMap();
+
             Vehicles = new List<Vehicle>();
             directxController.InitMap();
         }
