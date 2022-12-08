@@ -16,12 +16,20 @@ namespace Tram.Simulation
         [STAThread]
         static void Main()
         {
+            var simulationManager = new SimulationManager()
+            {
+                LastTimeUpdate = DateTime.Now,
+                IntervalMiliseconds = 1000,
+                Timer = new TimeSpan(6, 0, 0),
+                ActiveSimulation = true
+            };
+
             ZTPRepository.Initialize();
             MapRepository.Initialize();
             VehicleRepository.Initialize();
             MainController controller = Kernel.Get<MainController>();
             DirectxController directxController = Kernel.Get<DirectxController>();
-            controller.StartSimulation(TimeHelper.GetTime("07:00"));
+            controller.StartSimulation(TimeHelper.GetTime("05:00"));
 
             using (MainForm form = new MainForm())
             {
@@ -32,17 +40,18 @@ namespace Tram.Simulation
 
                 while (form.Created)
                 {
-                    controller.Update(); // UPDATE SIMULATION
-                    form.Render(controller.Render); //RENDER SIMULATION
-                    form.UpdateForm(); // UPDATE WINDOW
-                    Application.DoEvents();
+                    if ((DateTime.Now - simulationManager.LastTimeUpdate).TotalMilliseconds > 100)
+                    {
+                        simulationManager.UpdateSimulaton();
+                        controller.Update(); // UPDATE SIMULATION
+                        form.UpdateForm(); // UPDATE WINDOW
+                    }
 
+                    form.Render(controller.Render); //RENDER SIMULATION
+                    Application.DoEvents();
                 }
             }
 
-
-
-            //var simulationManager = new SimulationManager();
 
             //using (SimulationForm form = new SimulationForm(simulationManager))
             //{
@@ -51,9 +60,6 @@ namespace Tram.Simulation
             //    VehicleRepository.Initialize();
             //    form.Init();
             //    form.Show();
-            //    simulationManager.LastTimeUpdate = DateTime.Now;
-            //    simulationManager.IntervalMiliseconds = 1000;
-            //    simulationManager.Timer = new TimeSpan(6, 0, 0);
             //    simulationManager.InitMap3();
 
             //    while (form.Created)

@@ -116,7 +116,7 @@ namespace Tram.Controller.Repositories
                     }
                 }
 
-                var distance = distances.Average();
+                var distance = distances.Average() / 2;
 
                 if (distance > 0)
                 {

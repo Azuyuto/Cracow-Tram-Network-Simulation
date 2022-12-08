@@ -22,8 +22,6 @@ namespace Tram.Simulation.Forms
         {
             Text = Vehicle.Id;
             InitSummary();
-            InitCapacity();
-            InitDelay();
         }
 
         private void InitSummary()
@@ -65,38 +63,6 @@ namespace Tram.Simulation.Forms
             sb.Append(Environment.NewLine);
 
             propertiesLabel.Text = sb.ToString();
-        }
-
-        private void InitCapacity()
-        {
-            capacityChart.Series[0].ChartType = SeriesChartType.Line;
-            capacityChart.ChartAreas[0].AxisX.ScaleView.Zoom(0, Vehicle.PassengersHistory.Count);
-            capacityChart.ChartAreas[0].AxisY.ScaleView.Zoom(0, Vehicle.PassengersHistory.Max() + 5);
-            capacityChart.ChartAreas[0].AxisX.LabelStyle.Format = "{0:0}";
-            capacityChart.ChartAreas[0].AxisY.LabelStyle.Format = "{0:0}";
-            capacityChart.ChartAreas[0].AxisX.ScrollBar.Enabled = false;
-            capacityChart.ChartAreas[0].AxisY.ScrollBar.Enabled = false;
-
-            for (int i = 0; i < Vehicle.PassengersHistory.Count; i++)
-            {
-                capacityChart.Series[0].Points.AddXY(i, Vehicle.PassengersHistory[i]);
-            }
-        }
-
-        private void InitDelay()
-        {
-            delayChart.Series[0].ChartType = SeriesChartType.Line;
-            delayChart.ChartAreas[0].AxisX.ScaleView.Zoom(0, Vehicle.DelaysHistory.Count);
-            delayChart.ChartAreas[0].AxisY.ScaleView.Zoom(0, Vehicle.DelaysHistory.Max() + 1);
-            delayChart.ChartAreas[0].AxisX.LabelStyle.Format = "{0:0}";
-            delayChart.ChartAreas[0].AxisY.LabelStyle.Format = "{0:0}";
-            delayChart.ChartAreas[0].AxisX.ScrollBar.Enabled = false;
-            delayChart.ChartAreas[0].AxisY.ScrollBar.Enabled = false;
-
-            for (int i = 0; i < Vehicle.PassengersHistory.Count; i++)
-            {
-                delayChart.Series[0].Points.AddXY(i, Vehicle.DelaysHistory[i]);
-            }
         }
     }
 }

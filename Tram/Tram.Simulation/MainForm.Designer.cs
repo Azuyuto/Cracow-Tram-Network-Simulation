@@ -35,14 +35,11 @@
             this.zoomOriginalButton = new System.Windows.Forms.Panel();
             this.centerScreenButton = new System.Windows.Forms.Panel();
             this.aboutUsButton = new System.Windows.Forms.Panel();
-            this.playButton = new System.Windows.Forms.Panel();
-            this.pauseButton = new System.Windows.Forms.Panel();
             this.rightPanel = new System.Windows.Forms.Panel();
             this.vehiclesGridView = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Preview = new System.Windows.Forms.DataGridViewImageColumn();
             this.Info = new System.Windows.Forms.DataGridViewImageColumn();
-            this.speedCustomTrackBar = new Tram.Simulation.Controls.CustomTrackBar();
             this.rightPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vehiclesGridView)).BeginInit();
             this.SuspendLayout();
@@ -119,34 +116,11 @@
             this.aboutUsButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("aboutUsButton.BackgroundImage")));
             this.aboutUsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.aboutUsButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.aboutUsButton.Location = new System.Drawing.Point(733, 679);
+            this.aboutUsButton.Location = new System.Drawing.Point(733, 237);
             this.aboutUsButton.Name = "aboutUsButton";
             this.aboutUsButton.Size = new System.Drawing.Size(48, 48);
             this.aboutUsButton.TabIndex = 7;
-            // 
-            // playButton
-            // 
-            this.playButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.playButton.BackColor = System.Drawing.Color.White;
-            this.playButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("playButton.BackgroundImage")));
-            this.playButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.playButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.playButton.Location = new System.Drawing.Point(12, 733);
-            this.playButton.Name = "playButton";
-            this.playButton.Size = new System.Drawing.Size(48, 48);
-            this.playButton.TabIndex = 7;
-            // 
-            // pauseButton
-            // 
-            this.pauseButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pauseButton.BackColor = System.Drawing.Color.White;
-            this.pauseButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pauseButton.BackgroundImage")));
-            this.pauseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pauseButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pauseButton.Location = new System.Drawing.Point(733, 733);
-            this.pauseButton.Name = "pauseButton";
-            this.pauseButton.Size = new System.Drawing.Size(48, 48);
-            this.pauseButton.TabIndex = 8;
+            this.aboutUsButton.Paint += new System.Windows.Forms.PaintEventHandler(this.aboutUsButton_Paint);
             // 
             // rightPanel
             // 
@@ -157,7 +131,7 @@
             this.rightPanel.Controls.Add(this.vehiclesGridView);
             this.rightPanel.Location = new System.Drawing.Point(787, 12);
             this.rightPanel.Name = "rightPanel";
-            this.rightPanel.Size = new System.Drawing.Size(298, 769);
+            this.rightPanel.Size = new System.Drawing.Size(298, 716);
             this.rightPanel.TabIndex = 0;
             // 
             // vehiclesGridView
@@ -184,8 +158,9 @@
             this.vehiclesGridView.ShowCellErrors = false;
             this.vehiclesGridView.ShowEditingIcon = false;
             this.vehiclesGridView.ShowRowErrors = false;
-            this.vehiclesGridView.Size = new System.Drawing.Size(296, 767);
+            this.vehiclesGridView.Size = new System.Drawing.Size(296, 714);
             this.vehiclesGridView.TabIndex = 0;
+            this.vehiclesGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vehiclesGridView_CellContentClick);
             // 
             // Id
             // 
@@ -213,35 +188,12 @@
             this.Info.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Info.Width = 24;
             // 
-            // speedCustomTrackBar
-            // 
-            this.speedCustomTrackBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.speedCustomTrackBar.BackColor = System.Drawing.Color.White;
-            this.speedCustomTrackBar.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(206)))), ((int)(((byte)(184)))));
-            this.speedCustomTrackBar.BarHeight = 5;
-            this.speedCustomTrackBar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.speedCustomTrackBar.FirstValue = 1;
-            this.speedCustomTrackBar.LastValue = 10;
-            this.speedCustomTrackBar.Location = new System.Drawing.Point(66, 733);
-            this.speedCustomTrackBar.Name = "speedCustomTrackBar";
-            this.speedCustomTrackBar.PointerColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(232)))));
-            this.speedCustomTrackBar.PointerShadowColor = System.Drawing.Color.DodgerBlue;
-            this.speedCustomTrackBar.PointRadius = 15;
-            this.speedCustomTrackBar.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
-            this.speedCustomTrackBar.Size = new System.Drawing.Size(661, 48);
-            this.speedCustomTrackBar.TabIndex = 10;
-            this.speedCustomTrackBar.Value = 1;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1097, 793);
-            this.Controls.Add(this.speedCustomTrackBar);
-            this.Controls.Add(this.pauseButton);
-            this.Controls.Add(this.playButton);
+            this.ClientSize = new System.Drawing.Size(1097, 740);
             this.Controls.Add(this.aboutUsButton);
             this.Controls.Add(this.zoomOutButton);
             this.Controls.Add(this.zoomOriginalButton);
@@ -270,9 +222,6 @@
         private System.Windows.Forms.Panel zoomOriginalButton;
         private System.Windows.Forms.Panel centerScreenButton;
         private System.Windows.Forms.Panel aboutUsButton;
-        private System.Windows.Forms.Panel playButton;
-        private System.Windows.Forms.Panel pauseButton;
-        private Controls.CustomTrackBar speedCustomTrackBar;
         private System.Windows.Forms.Panel rightPanel;
         private System.Windows.Forms.DataGridView vehiclesGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;

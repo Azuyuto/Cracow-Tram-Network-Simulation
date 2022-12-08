@@ -54,7 +54,9 @@ namespace Tram.Controller.Controllers
                     DirectxHelper.CreateCircle(
                         pX,
                         pY,
-                        node.Type == NodeType.TramStop ? ViewConsts.STOP_COLOR.ToArgb() : ViewConsts.POINT_NORMAL_COLOR.ToArgb(),
+                        node.Type == NodeType.TramStop ? Color.Green.ToArgb() :
+                                        node.Type == NodeType.TramCross ? Color.Blue.ToArgb() :
+                                                                Color.Black.ToArgb(),
                             ViewConsts.POINT_RADIUS,
                             ViewConsts.POINT_PRECISION));
 
@@ -62,7 +64,7 @@ namespace Tram.Controller.Controllers
                 {
                     float pX2 = CalculateXPosition(node.Child.Node.Coordinates.X);
                     float pY2 = CalculateYPosition(node.Child.Node.Coordinates.Y);
-                    edges.Add(DirectxHelper.CreateLine(pX, pY, pX2, pY2, GetLineColor(node, node.Child.Node).ToArgb(), ViewConsts.POINT_RADIUS));
+                    edges.Add(DirectxHelper.CreateLine(pX, pY, pX2, pY2, ViewConsts.LINE_BASIC_COLOR.ToArgb(), ViewConsts.POINT_RADIUS));
                 }
                 else if (node.Children != null)
                 {
@@ -70,7 +72,7 @@ namespace Tram.Controller.Controllers
                     {
                         float pX2 = CalculateXPosition(child.Node.Coordinates.X);
                         float pY2 = CalculateYPosition(child.Node.Coordinates.Y);
-                        edges.Add(DirectxHelper.CreateLine(pX, pY, pX2, pY2, GetLineColor(node, child.Node).ToArgb(), ViewConsts.POINT_RADIUS));
+                        edges.Add(DirectxHelper.CreateLine(pX, pY, pX2, pY2, ViewConsts.LINE_BASIC_COLOR.ToArgb(), ViewConsts.POINT_RADIUS));
                     }
                 }
             }
@@ -191,12 +193,6 @@ namespace Tram.Controller.Controllers
         {
             return (cameraHeight * (19f / 99) + (80f / 99)) * ViewConsts.POINT_RADIUS;
         }
-        
-        private static Color GetLineColor(Node node1, Node node2)
-        {
-            return node1 != null && node1.IsUnderground && node2 != null && node2.IsUnderground ? ViewConsts.LINE_UNDERGROUND_COLOR : ViewConsts.LINE_BASIC_COLOR;
-        }
-
         #endregion Private Methods
     }
 }

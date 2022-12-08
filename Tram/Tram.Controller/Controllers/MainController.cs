@@ -21,7 +21,7 @@ namespace Tram.Controller.Controllers
 
         #region Public Properties
 
-        public float SimulationSpeed { get; set; } = 100;
+        public float SimulationSpeed { get; set; } = 10;
 
         public List<Node> Map { get; set; }
 

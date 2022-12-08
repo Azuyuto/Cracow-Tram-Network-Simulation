@@ -32,15 +32,8 @@ namespace Tram.Simulation
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.Opaque, true);
             SetLanguage();
 
-            // Set controls
-            playButton.Visible = false;
-            pauseButton.Location = playButton.Location;
-
             // Set handlers
             renderPanel.MouseWheel += RenderPanel_MouseWheel;
-            speedCustomTrackBar.OnBarValueChanged += SpeedCustomTrackBar_OnBarValueChanged;
-            playButton.Click += PlayButton_Click;
-            pauseButton.Click += PauseButton_Click;
             vehiclesGridView.CellClick += vehiclesGridView_CellClick;
             aboutUsButton.Click += AboutUsButton_Click;
 
@@ -167,29 +160,6 @@ namespace Tram.Simulation
         #endregion Private Methods
 
         #region Private Handlers
-
-        private void SpeedCustomTrackBar_OnBarValueChanged(object sender, int e)
-        {
-            if (controller.SimulationSpeed > 0)
-            {
-                controller.SimulationSpeed = e;
-            }
-        }
-
-        private void PauseButton_Click(object sender, EventArgs e)
-        {
-            controller.SimulationSpeed = 0;
-            pauseButton.Visible = false;
-            playButton.Visible = true;
-        }
-
-        private void PlayButton_Click(object sender, EventArgs e)
-        {
-            controller.SimulationSpeed = speedCustomTrackBar.Value;
-            playButton.Visible = false;
-            pauseButton.Visible = true;
-        }
-
         private void vehiclesGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex != -1)
@@ -209,11 +179,15 @@ namespace Tram.Simulation
         
         private void AboutUsButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Modelowanie i symulacja systemów 2017" + Environment.NewLine
+            MessageBox.Show("Main: Modelowanie i symulacja systemów 2017" + Environment.NewLine
                 + Environment.NewLine + "Katarzyna Burczyk" 
                 + Environment.NewLine + "Zuzanna Drwiła" 
-                + Environment.NewLine + "Kamil Gębarowski",
-                "Symulacja krakowskiej sieci tramwajowej");
+                + Environment.NewLine + "Kamil Gębarowski"
+                + Environment.NewLine + Environment.NewLine + "Rozwój: Symulacja systemów dyskretnych 2022" + Environment.NewLine
+                + Environment.NewLine + "Mikołaj Białek"
+                + Environment.NewLine + "Małgorzata Duda"
+                + Environment.NewLine + "Marcin Kalaus"
+                + Environment.NewLine + Environment.NewLine + "Symulacja krakowskiej sieci tramwajowej");
         }
 
         #endregion Private Handlers
@@ -277,6 +251,16 @@ namespace Tram.Simulation
         }
 
         private void renderPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void vehiclesGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void aboutUsButton_Paint(object sender, PaintEventArgs e)
         {
 
         }

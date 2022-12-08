@@ -75,8 +75,8 @@ namespace Tram.Simulation.Manager
                     float stopY = CalculateYPosition(stop.StopCoordinates.Y);
 
                     vertexes.Add(DirectxHelper.CreateCircle(stopX, stopY,
-                                    ViewConsts.POINT_NORMAL_COLOR.ToArgb(),
-                                    ViewConsts.POINT_RADIUS,
+                                    Color.Green.ToArgb(),
+                                    ViewConsts.POINT_RADIUS * 10,
                                     ViewConsts.POINT_PRECISION));
 
                     if (i + 1 != route.Stops.Count())
@@ -126,8 +126,8 @@ namespace Tram.Simulation.Manager
                 float stopY = CalculateYPosition(stop.StopCoordinates.Y);
 
                 vertexes.Add(DirectxHelper.CreateCircle(stopX, stopY,
-                                ViewConsts.POINT_NORMAL_COLOR.ToArgb(),
-                                ViewConsts.POINT_RADIUS,
+                                Color.Green.ToArgb(),
+                                ViewConsts.POINT_RADIUS * 4,
                                 ViewConsts.POINT_PRECISION));
             }
         }
