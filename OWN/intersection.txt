@@ -1,0 +1,28 @@
+intersection_id,intersection_name,intersection_lat,intersection_lon
+1,"Bronowice",50.077381,19.901749
+2,"Teatr Bagatela",50.063501,19.932946
+3,"Stary Kleparz",50.066328,19.939100
+4,"Dworzec Towarowy",50.075679,19.941096
+6,"Starowiślna - węzeł",50.056563, 19.945469
+7,"Hala Targowa",50.058494,19.947820
+8,"Starowiślna",50.050841,19.951323
+9,"Limanowskiego",50.045204,19.955483
+10,"Rondo Grzegórzeckie",50.057547,19.958986
+11,"Filharmonia",50.058902,19.933352
+12,"Piłsudskiego",50.060502,19.932340
+13,"Karmelicka",50.063501,19.932946
+14,"Świętej Gertrudy",50.058923,19.941129
+15,"Stradom",50.051786,19.941644
+16,"Plac Centralny - 1",50.072500,20.036858
+17,"Plac Centralny - 2",50.072366,20.038181
+18,"Plac Centralny - 3",50.071484,20.037940
+19,"Poczta Główna",50.059537,19.942157
+20,"Słowackiego",50.064634,19.944952
+21,"Korona",50.043847,19.947018
+22,"Lipińskiego,50.030741,19.926237
+23,"Mateczny",50.029396,19.936355
+24,"Łagiewniki",50.021246,19.932296
+25,"Bieżanów",50.024054,19.980014
+26,"Lipska",50.040677,19.983406
+27,"Czyżyńskie",50.073450,20.017817
+28,"Mogilskie",50.065562,19.959154
