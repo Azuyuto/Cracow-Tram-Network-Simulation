@@ -10,5 +10,7 @@ namespace Tram.Common.Consts
     {
         public static readonly TimeSpan SIMULATION_START = new TimeSpan(5, 0, 0);
         public static readonly TimeSpan SIMULATION_END = new TimeSpan(7, 0, 0);
+        public static readonly int REFRESH = 10; // ms
+        public static readonly int SIMULATION_UNIT = 1000; // ms
     }
 }

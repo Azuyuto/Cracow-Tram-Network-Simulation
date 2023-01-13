@@ -96,20 +96,7 @@ namespace Tram.Controller.Controllers
                     vehicle.IsOnStop = false;
                     vehicle.LastVisitedStop = vehicle.Position.Node1 != null && vehicle.Position.Node1.Type == NodeType.TramStop && vehicle.LastVisitedStop != vehicle.Position.Node1 ? vehicle.Position.Node1 : vehicle.Position.Node2;
                     vehicle.LastVisitedStops.Add(vehicle.LastVisitedStop);
-
                     vehicle.Speed = PhysicsHelper.GetNewSpeed(vehicle.Speed, deltaTime, true);
-
-                    //float distanceToNextStop = vehicle.Line.MainNodes.Last().Equals(vehicle.LastVisitedStop) ? 0 : vehicle.Line.GetNextStopDistance(vehicle.LastVisitedStop);
-                    //int timeToNextStop = vehicle.Departure.NextStopIntervals.Count > vehicle.LastVisitedStops.Count ? (int)vehicle.Departure.NextStopIntervals[vehicle.LastVisitedStops.Count] : 0;
-                    //timeToNextStop *= 60;
-                    //if (vehicle.DelaysHistory.Any())
-                    //{
-                    //    timeToNextStop -= 10 + (int)vehicle.DelaysHistory.Last();
-                    //}
-
-                    //vehicle.MaxSpeed = Math.Min(VehicleConsts.MAX_SPEED, /*timeToNextStop <= 0 ? */int.MaxValue/* : PhysicsHelper.GetMaxSpeed(distanceToNextStop, timeToNextStop)*/);
-
-                    //vehicle.LastDepartureTime = mainController.ActualRealTime;
                 }
                 else
                 {

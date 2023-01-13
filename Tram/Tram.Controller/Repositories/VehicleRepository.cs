@@ -147,6 +147,7 @@ namespace Tram.Controller.Repositories
                 {
                     Id = trip.Line.LineName,
                     Name = trip.Destination,
+                    TripID = trip.TripID,
                     Departures = new List<TramLine.Departure>(),
                     MainNodes = new List<Node>()
                 };

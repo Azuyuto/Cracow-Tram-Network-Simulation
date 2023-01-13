@@ -78,12 +78,13 @@ namespace Tram.Controller.Controllers
                 }
             }
 
+            // INTERSECTIONS
             //foreach (var i in mainController.TramIntersections)
             //{
             //    float pX = CalculateXPosition(i.Coordinates.X);
             //    float pY = CalculateYPosition(i.Coordinates.Y);
             //    vertexes.Add(DirectxHelper.CreateCircle(pX, pY, Color.DeepPink.ToArgb(),
-            //                ViewConsts.POINT_RADIUS * 100,
+            //                ViewConsts.POINT_RADIUS * 40,
             //                ViewConsts.POINT_PRECISION));
             //}
         }

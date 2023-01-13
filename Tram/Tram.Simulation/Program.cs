@@ -31,7 +31,7 @@ namespace Tram.Simulation
 
                 while (form.Created)
                 {
-                    if ((DateTime.Now - lastTimeUpdate).TotalMilliseconds > 10)
+                    if ((DateTime.Now - lastTimeUpdate).TotalMilliseconds > TimeConsts.REFRESH)
                     {
                         lastTimeUpdate = DateTime.Now;
                         controller.Update(); // UPDATE SIMULATION

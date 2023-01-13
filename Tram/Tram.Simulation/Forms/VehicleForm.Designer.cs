@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.summaryTabPage = new System.Windows.Forms.TabPage();
-            this.propertiesLabel = new System.Windows.Forms.Label();
             this.tabControl = new System.Windows.Forms.TabControl();
+            this.propertiesLabel = new System.Windows.Forms.RichTextBox();
             this.summaryTabPage.SuspendLayout();
             this.tabControl.SuspendLayout();
             this.SuspendLayout();
@@ -42,21 +42,9 @@
             this.summaryTabPage.Location = new System.Drawing.Point(4, 22);
             this.summaryTabPage.Name = "summaryTabPage";
             this.summaryTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.summaryTabPage.Size = new System.Drawing.Size(493, 374);
+            this.summaryTabPage.Size = new System.Drawing.Size(482, 640);
             this.summaryTabPage.TabIndex = 0;
             this.summaryTabPage.Text = "Podsumowanie";
-            // 
-            // propertiesLabel
-            // 
-            this.propertiesLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.propertiesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.propertiesLabel.Location = new System.Drawing.Point(3, 3);
-            this.propertiesLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.propertiesLabel.Name = "propertiesLabel";
-            this.propertiesLabel.Padding = new System.Windows.Forms.Padding(10);
-            this.propertiesLabel.Size = new System.Drawing.Size(487, 368);
-            this.propertiesLabel.TabIndex = 0;
-            this.propertiesLabel.Text = "Właściwości";
             // 
             // tabControl
             // 
@@ -65,15 +53,25 @@
             this.tabControl.Location = new System.Drawing.Point(0, 0);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(501, 400);
+            this.tabControl.Size = new System.Drawing.Size(490, 666);
             this.tabControl.TabIndex = 0;
+            // 
+            // propertiesLabel
+            // 
+            this.propertiesLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.propertiesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.propertiesLabel.Location = new System.Drawing.Point(3, 3);
+            this.propertiesLabel.Name = "propertiesLabel";
+            this.propertiesLabel.Size = new System.Drawing.Size(476, 634);
+            this.propertiesLabel.TabIndex = 0;
+            this.propertiesLabel.Text = "";
             // 
             // VehicleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(501, 400);
+            this.ClientSize = new System.Drawing.Size(490, 666);
             this.Controls.Add(this.tabControl);
             this.Name = "VehicleForm";
             this.Text = "VehicleForm";
@@ -85,7 +83,7 @@
 
         #endregion
         private System.Windows.Forms.TabPage summaryTabPage;
-        private System.Windows.Forms.Label propertiesLabel;
         private System.Windows.Forms.TabControl tabControl;
+        private System.Windows.Forms.RichTextBox propertiesLabel;
     }
 }

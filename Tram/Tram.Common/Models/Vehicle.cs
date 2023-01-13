@@ -9,8 +9,6 @@ namespace Tram.Common.Models
     {
         public TramLine Line { get; set; }
         
-        public int Passengers { get; set; }
-
         public DateTime StartTime { get; set; }
 
         public DateTime LastDepartureTime { get; set; }

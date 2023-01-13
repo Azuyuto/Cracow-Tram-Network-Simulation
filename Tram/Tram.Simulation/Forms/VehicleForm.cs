@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using Tram.Common.Helpers;
 using Tram.Common.Models;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Tram.Simulation.Forms
 {
@@ -27,6 +28,11 @@ namespace Tram.Simulation.Forms
         private void InitSummary()
         {
             StringBuilder sb = new StringBuilder();
+
+            sb.Append("Trip ID: ");
+            sb.Append(Vehicle.Line.TripID);
+            sb.Append(Environment.NewLine);
+            sb.Append(Environment.NewLine);
 
             sb.Append("Linia: ");
             sb.Append(Vehicle.Line.Id);
@@ -72,6 +78,10 @@ namespace Tram.Simulation.Forms
                 sb.Append(Environment.NewLine);
             }
 
+            propertiesLabel.ReadOnly = true;
+            propertiesLabel.BorderStyle = 0;
+            propertiesLabel.BackColor = this.BackColor;
+            propertiesLabel.TabStop = false;
             propertiesLabel.Text = sb.ToString();
         }
     }

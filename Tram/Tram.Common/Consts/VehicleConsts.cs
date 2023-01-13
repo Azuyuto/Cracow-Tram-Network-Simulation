@@ -11,19 +11,19 @@
         public const float SAFE_SPACE = LENGTH * 1.4f;
 
         // km/h
-        public const float MAX_SPEED = 50f;
+        public const float MAX_SPEED = 25f;
 
         // m/s
         public const float MAX_SPEED_M_S = MAX_SPEED * 1000 / 3600;
 
         // km/h
-        public const float MAX_CROSS_SPEED = 40f;
+        public const float MAX_CROSS_SPEED = 25f;
 
         // m/s
         public const float MAX_CROSS_SPEED_M_S = MAX_CROSS_SPEED * 1000 / 3600;
 
         // s
-        public const float TIME_TO_MAX_SPEED = 8f;
+        public const float TIME_TO_MAX_SPEED = 5f;
 
         // m/s^2
         public const float ACCELERATION = MAX_SPEED_M_S / TIME_TO_MAX_SPEED;

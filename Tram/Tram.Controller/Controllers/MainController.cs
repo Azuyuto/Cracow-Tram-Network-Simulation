@@ -62,7 +62,7 @@ namespace Tram.Controller.Controllers
             lastUpdateTime = DateTime.Now;
 
             // Change time 
-            ActualRealTime += new TimeSpan(0, 0, 0, 0, (int)(deltaTime * 1000));
+            ActualRealTime += new TimeSpan(0, 0, 0, 0, (int)(deltaTime * TimeConsts.SIMULATION_UNIT));
 
             // Remove finished courses
             CompletedVehicles.AddRange(Vehicles.Where(vehiclesController.FinishCoursePredicate).ToList());
@@ -116,7 +116,6 @@ namespace Tram.Controller.Controllers
                                 StartTime = line.LastDeparture.StartTime,
                                 LastDepartureTime = line.LastDeparture.StartTime,
                                 Departure = line.LastDeparture,
-                                Passengers = 0,
                                 Speed = 0f,
                                 IsOnStop = line.MainNodes.First().Type == NodeType.TramStop,
                                 LastVisitedStops = new List<Node>(),
