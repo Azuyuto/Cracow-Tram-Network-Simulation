@@ -3,6 +3,7 @@ using Microsoft.DirectX.Direct3D;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Xml.Linq;
 using Tram.Common.Consts;
 using Tram.Common.Enums;
 using Tram.Common.Extensions;
@@ -47,7 +48,7 @@ namespace Tram.Controller.Controllers
 
             foreach (var node in mainController.Map.OrderBy(n => !n.IsUnderground))
             {
-                float pX = CalculateXPosition(node.Coordinates.X); 
+                float pX = CalculateXPosition(node.Coordinates.X);
                 float pY = CalculateYPosition(node.Coordinates.Y);
 
                 vertexes.Add(
@@ -76,6 +77,15 @@ namespace Tram.Controller.Controllers
                     }
                 }
             }
+
+            //foreach (var i in mainController.TramIntersections)
+            //{
+            //    float pX = CalculateXPosition(i.Coordinates.X);
+            //    float pY = CalculateYPosition(i.Coordinates.Y);
+            //    vertexes.Add(DirectxHelper.CreateCircle(pX, pY, Color.DeepPink.ToArgb(),
+            //                ViewConsts.POINT_RADIUS * 100,
+            //                ViewConsts.POINT_PRECISION));
+            //}
         }
 
         public void Render(Device device, Vector3 cameraPosition, Vehicle selectedVehicle, string time)
@@ -114,10 +124,15 @@ namespace Tram.Controller.Controllers
             return (originalY - minY) * 100 / (maxX - minX) - (50 * (minY - maxY)) / (minX - maxX);
         }
 
+        public float OrgXPosition(float X)
+        {
+            return (((X + maxY) - 100) * (maxX - minX / 100)) - minX;
+        }
+
         #endregion Public Methods
 
         #region Private Methods
-        
+
         private void InitDevice(Device device)
         {
             System.Drawing.Font systemfont = new System.Drawing.Font("Arial", 12f, System.Drawing.FontStyle.Regular);

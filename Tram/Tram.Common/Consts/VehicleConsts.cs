@@ -17,7 +17,7 @@
         public const float MAX_SPEED_M_S = MAX_SPEED * 1000 / 3600;
 
         // km/h
-        public const float MAX_CROSS_SPEED = 15f;
+        public const float MAX_CROSS_SPEED = 40f;
 
         // m/s
         public const float MAX_CROSS_SPEED_M_S = MAX_CROSS_SPEED * 1000 / 3600;

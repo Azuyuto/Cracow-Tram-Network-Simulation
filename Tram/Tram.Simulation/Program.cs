@@ -1,35 +1,26 @@
 ﻿using System;
 using System.Windows.Forms;
+using Tram.Common.Consts;
 using Tram.Common.Helpers;
 using Tram.Controller;
 using Tram.Controller.Controllers;
 using Tram.Controller.Repositories;
-using Tram.Simulation.Manager;
 
 namespace Tram.Simulation
 {
     static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-            var simulationManager = new SimulationManager()
-            {
-                LastTimeUpdate = DateTime.Now,
-                IntervalMiliseconds = 1000,
-                Timer = new TimeSpan(6, 0, 0),
-                ActiveSimulation = true
-            };
+            var lastTimeUpdate = DateTime.Now;
 
             ZTPRepository.Initialize();
             MapRepository.Initialize();
             VehicleRepository.Initialize();
             MainController controller = Kernel.Get<MainController>();
             DirectxController directxController = Kernel.Get<DirectxController>();
-            controller.StartSimulation(TimeHelper.GetTime("05:00"));
+            controller.StartSimulation(new DateTime() + TimeConsts.SIMULATION_START);
 
             using (MainForm form = new MainForm())
             {
@@ -40,9 +31,9 @@ namespace Tram.Simulation
 
                 while (form.Created)
                 {
-                    if ((DateTime.Now - simulationManager.LastTimeUpdate).TotalMilliseconds > 100)
+                    if ((DateTime.Now - lastTimeUpdate).TotalMilliseconds > 10)
                     {
-                        simulationManager.UpdateSimulaton();
+                        lastTimeUpdate = DateTime.Now;
                         controller.Update(); // UPDATE SIMULATION
                         form.UpdateForm(); // UPDATE WINDOW
                     }
@@ -51,30 +42,6 @@ namespace Tram.Simulation
                     Application.DoEvents();
                 }
             }
-
-
-            //using (SimulationForm form = new SimulationForm(simulationManager))
-            //{
-            //    ZTPRepository.Initialize();
-            //    MapRepository.Initialize();
-            //    VehicleRepository.Initialize();
-            //    form.Init();
-            //    form.Show();
-            //    simulationManager.InitMap3();
-
-            //    while (form.Created)
-            //    {
-            //        if (simulationManager.ActiveSimulation)
-            //            if ((DateTime.Now - simulationManager.LastTimeUpdate).TotalMilliseconds > 1000)
-            //            {
-            //                simulationManager.UpdateSimulaton();
-            //                form.SetTimer(simulationManager.Timer);
-            //            }
-
-            //        form.Render(simulationManager.Render); //RENDER SIMULATION
-            //        Application.DoEvents();
-            //    }
-            //}
         }
     }
 }

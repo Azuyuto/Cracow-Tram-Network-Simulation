@@ -1,12 +1,14 @@
 ﻿using Microsoft.DirectX;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Tram.Common.Models.Own;
 using Tram.Common.Models.ZTP;
 using TramNetwork.Common.Models.ZTP;
 
@@ -16,6 +18,7 @@ namespace Tram.Controller.Repositories
     {
         public static int ServiceID { get; set; }
 
+        public static List<Intersection> Intersections { get; set; }
         public static List<NodePair> MapLines { get; set; }
         public static List<LineZTP> Lines { get; set; }
         public static List<TripZTP> Trips { get; set; }
@@ -28,12 +31,42 @@ namespace Tram.Controller.Repositories
         {
             ServiceID = 2;
 
+            ReadIntersections();
             ReadStopsInfo();
             ReadStopTimesInfo();
             ReadTripsInfo();
             ReadLinesInfo();
-            GenerateMapLines();
             SetLists();
+        }
+
+        public static void ReadIntersections()
+        {
+            try
+            {
+                Intersections = new List<Intersection>();
+                using (StreamReader sr = new StreamReader("OWN/intersection.txt"))
+                {
+                    sr.ReadLine(); // ignore header
+                    string line;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        Vector2 coord = new Vector2();
+                        var data = line.Split(',').ToList();
+                        var intersection = new Intersection();
+                        intersection.ID = data[0];
+                        intersection.Name = data[1].Trim('"');
+                        coord.X = float.Parse(data[3], CultureInfo.InvariantCulture);
+                        coord.Y = float.Parse(data[2], CultureInfo.InvariantCulture);
+                        intersection.Coordinates = coord;
+                        Intersections.Add(intersection);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("The file could not be read:");
+                Console.WriteLine(e.Message);
+            }
         }
 
         public static void SetLists()
@@ -43,7 +76,10 @@ namespace Tram.Controller.Repositories
             {
                 var line = Lines.Where(a => a.RouteID == trip.RouteID).FirstOrDefault();
                 if (line != null)
+                {
                     line.Trips.Add(trip);
+                    trip.Line = line;
+                }
             }
 
             // Stop Dictionary
@@ -60,12 +96,6 @@ namespace Tram.Controller.Repositories
                     }
                 }    
             }
-        }
-
-        public static void GenerateMapLines()
-        {
-            MapLines = new List<NodePair>();
-
         }
 
         public static List<RouteZTP> GetRoutes()
@@ -190,7 +220,7 @@ namespace Tram.Controller.Repositories
             try
             {
                 Stops = new List<StopZTP>();
-                using (StreamReader sr = new StreamReader("ZTP/stops.txt"))
+                using (StreamReader sr = new StreamReader("ZTP/stops.txt", Encoding.UTF8))
                 {
                     sr.ReadLine(); // ignore header
                     string line;

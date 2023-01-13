@@ -162,20 +162,6 @@ namespace Tram.Controller.Repositories
                                 });
                             }
                         }
-                        // On Begin
-                        //else
-                        //{
-                        //    var mapNodes = new List<MapNode>();
-                        //    foreach (var c in ls.Coordinates)
-                        //    {
-                        //        mapNodes.Add(new MapNode()
-                        //        {
-                        //            Coordinates = c
-                        //        });
-                        //    }
-
-                        //    tr.Nodes.InsertRange(0, mapNodes);
-                        //}
                     }
                 }
             }
@@ -193,6 +179,7 @@ namespace Tram.Controller.Repositories
                             t.TramStops.Add(s);
                             n.IsTramStop = true;
                             n.StopID = s.StopID;
+                            n.StopName = s.Name;
                         }
                     }
                 }

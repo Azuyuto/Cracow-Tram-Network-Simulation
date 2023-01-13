@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Consts\CalculationConsts.cs" />
+    <Compile Include="Consts\TimeConsts.cs" />
     <Compile Include="Consts\VehicleConsts.cs" />
     <Compile Include="Consts\ViewConsts.cs" />
     <Compile Include="Enums\NodeType.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="Models\Map\TramRoute.cs" />
     <Compile Include="Models\Map\TramStop.cs" />
     <Compile Include="Models\ModelBase.cs" />
+    <Compile Include="Models\Own\Intersection.cs" />
     <Compile Include="Models\TramLine.cs" />
     <Compile Include="Models\Node.cs" />
     <Compile Include="Models\TramIntersection.cs" />

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.DirectX;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -6,6 +7,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using Tram.Common.Consts;
 using Tram.Common.Enums;
 using Tram.Common.Extensions;
 using Tram.Common.Helpers;
@@ -24,12 +26,41 @@ namespace Tram.Controller.Repositories
         {
             SetNodes();
             SetTramLines();
+            SetIntersections();
+        }
+
+        public static void SetIntersections()
+        {
+            Intersections = new List<TramIntersection>();
+            foreach(var i in ZTPRepository.Intersections)
+            {
+                Intersections.Add(new TramIntersection()
+                {
+                    Id = i.ID,
+                    Coordinates = i.Coordinates,
+                    Vehicles = new Queue<Vehicle>(),
+                    Nodes = new List<Node>()
+                });
+            }
+
+            foreach(var n in Nodes)
+            {
+                foreach(var i in Intersections)
+                {
+                    var distance = Math.Pow(Math.Abs(n.Coordinates.X - i.Coordinates.X), 2) + Math.Pow(Math.Abs(n.Coordinates.Y - i.Coordinates.Y), 2);
+                    if(distance < 0.00000025)
+                    {
+                        n.Type = NodeType.TramCross;
+                        n.Intersection = i;
+                        i.Nodes.Add(n);
+                    }
+                }
+            }
         }
 
         public static void SetNodes()
         {
             Nodes = new List<Node>();
-            Intersections = new List<TramIntersection>();
 
             foreach (var line in ZTPRepository.Lines)
             {
@@ -43,6 +74,7 @@ namespace Tram.Controller.Repositories
                         node = new Node()
                         {
                             StopID = mapNode.StopID ?? "",
+                            StopName = mapNode.StopName ?? "-",
                             Coordinates = mapNode.Coordinates,
                             Id = "N_" + (Nodes.Count() + 1).ToString(),
                             VehiclesOn = new List<Vehicle>(),
@@ -102,108 +134,34 @@ namespace Tram.Controller.Repositories
                     latestNode = node;
                 }
             }
-
-            var regex = new Regex(@"stop_[0-9]*_");
-            foreach(var intersection in Nodes.Where(a => !String.IsNullOrEmpty(a.StopID)).GroupBy(a => regex.Match(a.StopID).Value).Where(a => a.Count() > 2)) // intersection
-            {
-                var nodes = intersection.ToList();
-                var distances = new List<float>();
-                for(int i = 0; i < nodes.Count(); i ++)
-                {
-                    for(int j = i + 1; j < nodes.Count();j++)
-                    {
-                        distances.Add(Math.Abs(nodes[i].Coordinates.X - nodes[j].Coordinates.X) + Math.Abs(nodes[i].Coordinates.Y - nodes[j].Coordinates.Y));
-                    }
-                }
-
-                var distance = distances.Average() / 2;
-
-                if (distance > 0)
-                {
-                    var inter = new TramIntersection()
-                    {
-                        Id = "I_" + Intersections.Count(),
-                        Vehicles = new Queue<Vehicle>(),
-                        Nodes = new List<Node>()
-                    };
-                    Intersections.Add(inter);
-
-                    foreach(var n in nodes)
-                    {
-                        if(n.Children != null)
-                        {
-                            foreach(var c in n.Children)
-                            {
-                                CheckAndSetIntersection(inter, n, c.Node, distance);
-                            }
-                        }
-                        else if (n.Child != null)
-                        {
-                            CheckAndSetIntersection(inter, n, n.Child.Node, distance);
-                        }
-                    }
-                }
-            }
-        }
-
-        public static void CheckAndSetIntersection(TramIntersection i, Node org, Node checkNode, float distance)
-        {
-            if(checkNode.Type == NodeType.TramCross)
-            {
-                return;
-            }
-            var currentDistance = (Math.Abs(org.Coordinates.X - checkNode.Coordinates.X) + Math.Abs(org.Coordinates.Y - checkNode.Coordinates.Y));
-            if (currentDistance > distance)
-            {
-                return;
-            }
-            else
-            {
-                checkNode.Type = NodeType.TramCross;
-                checkNode.Intersection = i;
-                i.Nodes.Add(checkNode);
-                if (checkNode.Children != null)
-                {
-                    foreach (var c in checkNode.Children)
-                    {
-                        CheckAndSetIntersection(i, org, c.Node, distance);
-                    }
-                }
-                else if (checkNode.Child != null)
-                {
-                    CheckAndSetIntersection(i, org, checkNode.Child.Node, distance);
-                }
-            }
         }
 
         public static void SetTramLines()
         {
             TramLines = new List<TramLine>();
 
-            foreach (var line in ZTPRepository.Lines.Where(a => a.TramRoute != null))
+            foreach (var trip in ZTPRepository.Trips.Where(a => TimeConsts.SIMULATION_START <= a.FirstStart.Departure && a.FirstStart.Departure <= TimeConsts.SIMULATION_END))
             {
-                var starts = line.Trips.Select(a => new DateTime() + a.FirstStart.Departure).ToList();
+                var start = new DateTime() + trip.FirstStart.Departure;
                 var tramLine = new TramLine()
                 {
-                    Id = line.LineName,
+                    Id = trip.Line.LineName,
+                    Name = trip.Destination,
                     Departures = new List<TramLine.Departure>(),
                     MainNodes = new List<Node>()
                 };
 
-                var stopsCount = line.TramRoute.Nodes.Where(a => a.IsTramStop).ToList();
+                var stopsCount = trip.Line.TramRoute.Nodes.Where(a => a.IsTramStop).ToList();
 
-                foreach (var start in starts)
+                var intervals = new List<float>();
+                stopsCount.ForEach(a => intervals.Add(0.1F));
+                tramLine.Departures.Add(new TramLine.Departure()
                 {
-                    var intervals = new List<float>();
-                    stopsCount.ForEach(a => intervals.Add(1));
-                    tramLine.Departures.Add(new TramLine.Departure()
-                    {
-                        NextStopIntervals = intervals,
-                        StartTime = start
-                    });
-                }
+                    NextStopIntervals = intervals,
+                    StartTime = start
+                });
 
-                foreach (var n in line.TramRoute.Nodes)
+                foreach (var n in trip.Line.TramRoute.Nodes)
                 {
                     tramLine.MainNodes.Add(Nodes.Where(a => a.Coordinates == n.Coordinates).FirstOrDefault());
                 }

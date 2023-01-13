@@ -37,11 +37,14 @@
             this.aboutUsButton = new System.Windows.Forms.Panel();
             this.rightPanel = new System.Windows.Forms.Panel();
             this.vehiclesGridView = new System.Windows.Forms.DataGridView();
+            this.completedGridView = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Preview = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Last = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Info = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rightPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vehiclesGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.completedGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // renderPanel
@@ -64,7 +67,7 @@
             this.zoomInButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("zoomInButton.BackgroundImage")));
             this.zoomInButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.zoomInButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.zoomInButton.Location = new System.Drawing.Point(733, 12);
+            this.zoomInButton.Location = new System.Drawing.Point(733, 13);
             this.zoomInButton.Name = "zoomInButton";
             this.zoomInButton.Size = new System.Drawing.Size(48, 48);
             this.zoomInButton.TabIndex = 4;
@@ -77,7 +80,7 @@
             this.zoomOutButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("zoomOutButton.BackgroundImage")));
             this.zoomOutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.zoomOutButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.zoomOutButton.Location = new System.Drawing.Point(733, 66);
+            this.zoomOutButton.Location = new System.Drawing.Point(733, 67);
             this.zoomOutButton.Name = "zoomOutButton";
             this.zoomOutButton.Size = new System.Drawing.Size(48, 48);
             this.zoomOutButton.TabIndex = 5;
@@ -90,7 +93,7 @@
             this.zoomOriginalButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("zoomOriginalButton.BackgroundImage")));
             this.zoomOriginalButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.zoomOriginalButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.zoomOriginalButton.Location = new System.Drawing.Point(733, 129);
+            this.zoomOriginalButton.Location = new System.Drawing.Point(733, 121);
             this.zoomOriginalButton.Name = "zoomOriginalButton";
             this.zoomOriginalButton.Size = new System.Drawing.Size(48, 48);
             this.zoomOriginalButton.TabIndex = 5;
@@ -103,7 +106,7 @@
             this.centerScreenButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("centerScreenButton.BackgroundImage")));
             this.centerScreenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.centerScreenButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.centerScreenButton.Location = new System.Drawing.Point(733, 183);
+            this.centerScreenButton.Location = new System.Drawing.Point(733, 175);
             this.centerScreenButton.Name = "centerScreenButton";
             this.centerScreenButton.Size = new System.Drawing.Size(48, 48);
             this.centerScreenButton.TabIndex = 5;
@@ -111,12 +114,12 @@
             // 
             // aboutUsButton
             // 
-            this.aboutUsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.aboutUsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.aboutUsButton.BackColor = System.Drawing.Color.White;
             this.aboutUsButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("aboutUsButton.BackgroundImage")));
             this.aboutUsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.aboutUsButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.aboutUsButton.Location = new System.Drawing.Point(733, 237);
+            this.aboutUsButton.Location = new System.Drawing.Point(733, 229);
             this.aboutUsButton.Name = "aboutUsButton";
             this.aboutUsButton.Size = new System.Drawing.Size(48, 48);
             this.aboutUsButton.TabIndex = 7;
@@ -128,10 +131,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rightPanel.AutoScroll = true;
             this.rightPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rightPanel.Controls.Add(this.completedGridView);
             this.rightPanel.Controls.Add(this.vehiclesGridView);
             this.rightPanel.Location = new System.Drawing.Point(787, 12);
             this.rightPanel.Name = "rightPanel";
-            this.rightPanel.Size = new System.Drawing.Size(298, 716);
+            this.rightPanel.Size = new System.Drawing.Size(388, 716);
             this.rightPanel.TabIndex = 0;
             // 
             // vehiclesGridView
@@ -142,10 +146,9 @@
             this.vehiclesGridView.AllowUserToResizeRows = false;
             this.vehiclesGridView.BackgroundColor = System.Drawing.Color.White;
             this.vehiclesGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.vehiclesGridView.ColumnHeadersVisible = false;
             this.vehiclesGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
-            this.Preview,
+            this.Last,
             this.Info});
             this.vehiclesGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.vehiclesGridView.Location = new System.Drawing.Point(0, 0);
@@ -158,26 +161,50 @@
             this.vehiclesGridView.ShowCellErrors = false;
             this.vehiclesGridView.ShowEditingIcon = false;
             this.vehiclesGridView.ShowRowErrors = false;
-            this.vehiclesGridView.Size = new System.Drawing.Size(296, 714);
+            this.vehiclesGridView.Size = new System.Drawing.Size(386, 714);
             this.vehiclesGridView.TabIndex = 0;
             this.vehiclesGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vehiclesGridView_CellContentClick);
+            // 
+            // completedGridView
+            // 
+            this.completedGridView.AllowUserToAddRows = false;
+            this.completedGridView.AllowUserToDeleteRows = false;
+            this.completedGridView.AllowUserToResizeColumns = false;
+            this.completedGridView.AllowUserToResizeRows = false;
+            this.completedGridView.BackgroundColor = System.Drawing.Color.White;
+            this.completedGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.completedGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1});
+            this.completedGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.completedGridView.Location = new System.Drawing.Point(0, 595);
+            this.completedGridView.MultiSelect = false;
+            this.completedGridView.Name = "completedGridView";
+            this.completedGridView.ReadOnly = true;
+            this.completedGridView.RowHeadersVisible = false;
+            this.completedGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.completedGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.completedGridView.ShowCellErrors = false;
+            this.completedGridView.ShowEditingIcon = false;
+            this.completedGridView.ShowRowErrors = false;
+            this.completedGridView.Size = new System.Drawing.Size(386, 119);
+            this.completedGridView.TabIndex = 1;
+            this.completedGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.completedGridView_CellClick);
             // 
             // Id
             // 
             this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Id.HeaderText = "Id";
+            this.Id.HeaderText = "Nr & Kierunek";
             this.Id.Name = "Id";
             this.Id.ReadOnly = true;
             this.Id.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // Preview
+            // Last
             // 
-            this.Preview.HeaderText = "Preview";
-            this.Preview.Image = global::Tram.Simulation.Properties.Resources.center_screen_small;
-            this.Preview.Name = "Preview";
-            this.Preview.ReadOnly = true;
-            this.Preview.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Preview.Width = 24;
+            this.Last.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Last.HeaderText = "Ostatni przystanek";
+            this.Last.Name = "Last";
+            this.Last.ReadOnly = true;
+            this.Last.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Info
             // 
@@ -188,12 +215,20 @@
             this.Info.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Info.Width = 24;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Zakończone trasy";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1097, 740);
+            this.ClientSize = new System.Drawing.Size(1187, 740);
             this.Controls.Add(this.aboutUsButton);
             this.Controls.Add(this.zoomOutButton);
             this.Controls.Add(this.zoomOriginalButton);
@@ -211,6 +246,7 @@
             this.Text = "Form1";
             this.rightPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.vehiclesGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.completedGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -224,8 +260,10 @@
         private System.Windows.Forms.Panel aboutUsButton;
         private System.Windows.Forms.Panel rightPanel;
         private System.Windows.Forms.DataGridView vehiclesGridView;
+        private System.Windows.Forms.DataGridView completedGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewImageColumn Preview;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Last;
         private System.Windows.Forms.DataGridViewImageColumn Info;
     }
 }

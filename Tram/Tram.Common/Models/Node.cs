@@ -9,6 +9,8 @@ namespace Tram.Common.Models
     {
         public string StopID { get; set; }
 
+        public string StopName { get; set; }
+
         public Vector2 Coordinates { get; set; }
 
         public NodeType Type { get; set; }

@@ -33,13 +33,13 @@ namespace Tram.Simulation.Forms
             sb.Append(Environment.NewLine);
             sb.Append(Environment.NewLine);
 
-            sb.Append("Godzina startu: ");
-            sb.Append(TimeHelper.GetTimeStr(Vehicle.StartTime));
+            sb.Append("Kierunek: ");
+            sb.Append(Vehicle.Line.Name);
             sb.Append(Environment.NewLine);
             sb.Append(Environment.NewLine);
 
-            sb.Append("Zapełnienie: ");
-            sb.Append(Vehicle.Passengers);
+            sb.Append("Godzina startu: ");
+            sb.Append(TimeHelper.GetTimeStr(Vehicle.StartTime));
             sb.Append(Environment.NewLine);
             sb.Append(Environment.NewLine);
 
@@ -61,6 +61,16 @@ namespace Tram.Simulation.Forms
             sb.Append(Vehicle.LastVisitedStops.Count);
             sb.Append(Environment.NewLine);
             sb.Append(Environment.NewLine);
+
+            sb.Append("Historia przystanków: ");
+            sb.Append(Environment.NewLine);
+            sb.Append(Environment.NewLine);
+            foreach (var i in Vehicle.StopHistories)
+            {
+                var s = Encoding.UTF8.GetString(Encoding.Default.GetBytes(i.Item1));
+                sb.Append(i.Item2.ToString("HH:mm") + " - " + s);
+                sb.Append(Environment.NewLine);
+            }
 
             propertiesLabel.Text = sb.ToString();
         }

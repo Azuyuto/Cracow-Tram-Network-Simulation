@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.DirectX;
+using System.Collections.Generic;
 
 namespace Tram.Common.Models
 {
@@ -9,5 +10,7 @@ namespace Tram.Common.Models
         public Vehicle CurrentVehicle { get; set; }
 
         public Queue<Vehicle> Vehicles { get; set; }
+
+        public Vector2 Coordinates { get; set; }
     }
 }

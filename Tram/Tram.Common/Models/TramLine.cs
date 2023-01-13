@@ -5,6 +5,8 @@ namespace Tram.Common.Models
 {
     public class TramLine : ModelBase
     {
+        public string Name { get; set; }
+
         public List<Node> MainNodes { get; set; }
         
         public List<Departure> Departures { get; set; }

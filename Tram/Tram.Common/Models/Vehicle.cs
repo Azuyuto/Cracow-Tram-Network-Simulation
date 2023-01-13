@@ -35,9 +35,12 @@ namespace Tram.Common.Models
 
         public List<Node> VisitedNodes { get; set; }
 
-        public List<int> PassengersHistory { get; set; }
+        public List<Tuple<string, DateTime>> StopHistories { get; set; }
 
-        public List<double> DelaysHistory { get; set; }
+        public Vehicle()
+        {
+            StopHistories = new List<Tuple<string, DateTime>>();
+        }
 
         Vector2 IObjWithCoordinates.Coordinates
         {

@@ -23,7 +23,7 @@ namespace Tram.Common.Extensions
 
         public static float GetNextStopDistance(this TramLine line, Node node)
         {
-            Node.Next next = line.GetNextNode(node);
+            var next = line.GetNextNode(node);
             float distance = next.Distance;
             while (!(next.Node.Type == NodeType.TramStop && line.MainNodes.Any(n => n.Equals(next.Node))))
             {

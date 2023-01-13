@@ -13,19 +13,20 @@ namespace Tram.Controller.Controllers
 {
     public class MainController
     {
-        private IRepository repository;
-        private DirectxController directxController;
-        private VehiclesController vehiclesController;
+        private readonly DirectxController directxController;
+        private readonly VehiclesController vehiclesController;
         
         private DateTime lastUpdateTime;
 
         #region Public Properties
 
-        public float SimulationSpeed { get; set; } = 10;
-
         public List<Node> Map { get; set; }
 
+        public List<TramIntersection> TramIntersections { get; set; }
+
         public List<Vehicle> Vehicles { get; set; }
+
+        public List<Vehicle> CompletedVehicles { get; set; }
 
         public List<TramLine> Lines { get; set; }
 
@@ -33,12 +34,10 @@ namespace Tram.Controller.Controllers
 
         #endregion Public Properties
 
-        public MainController(DirectxController directxController, VehiclesController vehiclesController, IRepository repository)
+        public MainController(DirectxController directxController, VehiclesController vehiclesController)
         {
             this.directxController = directxController;
             this.vehiclesController = vehiclesController;
-            this.repository = repository;
-            repository.LoadData("Points.csv", "Lines.csv");
         }
 
         #region Public Methods
@@ -63,9 +62,11 @@ namespace Tram.Controller.Controllers
             lastUpdateTime = DateTime.Now;
 
             // Change time 
-            ActualRealTime += new TimeSpan(0, 0, 0, 0, (int)(deltaTime * 10000));
+            ActualRealTime += new TimeSpan(0, 0, 0, 0, (int)(deltaTime * 1000));
 
-            //Remove finished courses
+            // Remove finished courses
+            CompletedVehicles.AddRange(Vehicles.Where(vehiclesController.FinishCoursePredicate).ToList());
+
             Vehicles.RemoveAll(vehiclesController.FinishCoursePredicate);
             
             float sampleDeltaTime = deltaTime / CalculationConsts.SAMPLES_COUNT;
@@ -86,11 +87,10 @@ namespace Tram.Controller.Controllers
         {
             Lines = VehicleRepository.TramLines;
             Map = VehicleRepository.Nodes;
-
-            //Lines = repository.GetLines();
-            //Map = repository.GetMap();
+            TramIntersections = VehicleRepository.Intersections;
 
             Vehicles = new List<Vehicle>();
+            CompletedVehicles = new List<Vehicle>();
             directxController.InitMap();
         }
 
@@ -111,14 +111,12 @@ namespace Tram.Controller.Controllers
                             line.LastDeparture = line.Departures[i];
                             Vehicle newVehicle = new Vehicle()
                             {
-                                Id = TimeHelper.GetTimeStr(line.LastDeparture.StartTime) + " - " + line.Id,
+                                Id = TimeHelper.GetTimeStr(line.LastDeparture.StartTime) + " - " + line.Id + " " + line.Name,
                                 Line = line,
                                 StartTime = line.LastDeparture.StartTime,
                                 LastDepartureTime = line.LastDeparture.StartTime,
                                 Departure = line.LastDeparture,
                                 Passengers = 0,
-                                PassengersHistory = new List<int>() { 0 },
-                                DelaysHistory = new List<double>() { 0 },
                                 Speed = 0f,
                                 IsOnStop = line.MainNodes.First().Type == NodeType.TramStop,
                                 LastVisitedStops = new List<Node>(),

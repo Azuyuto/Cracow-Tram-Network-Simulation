@@ -9,6 +9,8 @@ using Tram.Controller.Controllers;
 using Tram.Common.Models;
 using System.Collections.Generic;
 using Tram.Simulation.Forms;
+using System.Text;
+using System.Linq;
 
 namespace Tram.Simulation
 {
@@ -82,8 +84,24 @@ namespace Tram.Simulation
                 {
                     vehiclesGridView.Rows[selectedRowIndex].Selected = true;
                 }
+
+                completedGridView.Rows.Clear();
+                controller.CompletedVehicles.ForEach(vehicle =>
+                {
+                    completedGridView.Rows.Add(vehicle.Id);
+                });
             }
-            
+            else
+            {
+                for(int i = 0; i < vehicles.Count; i++)
+                {
+                    var lastStop = vehicles[i].LastVisitedStop;
+                    byte[] bytes = Encoding.Default.GetBytes(lastStop != null ? lastStop.StopName : "");
+                    var s = Encoding.UTF8.GetString(bytes);
+                    vehiclesGridView.Rows[i].SetValues(vehicles[i].Id, s);
+                }
+            }
+
             if (selectedVehicle != null)
             {
                 cameraPosition = new Vector3(
@@ -164,7 +182,7 @@ namespace Tram.Simulation
         {
             if (e.RowIndex != -1)
             {
-                if (vehiclesGridView.CurrentCell.ColumnIndex.Equals(1))
+                if (vehiclesGridView.CurrentCell.ColumnIndex.Equals(0) || vehiclesGridView.CurrentCell.ColumnIndex.Equals(1))
                 {
                     selectedVehicle = vehicles[e.RowIndex];
                 }
@@ -176,7 +194,17 @@ namespace Tram.Simulation
                 }
             }
         }
-        
+
+        private void completedGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex != -1)
+            {
+                VehicleForm vehicleForm = new VehicleForm(controller.CompletedVehicles[e.RowIndex]);
+                vehicleForm.Init();
+                vehicleForm.Show();
+            }
+        }
+
         private void AboutUsButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Main: Modelowanie i symulacja systemów 2017" + Environment.NewLine
